@@ -1,4 +1,7 @@
-### Trabajo Práctico N° 3. Control y pre-procesamiento de datos de NGS<br/><br/>
+### [Trabajo Práctico N° 3. Control y pre-procesamiento de datos de NGS](https://docs.google.com/presentation/d/1JzTG1_mhRBua4LUjxI2eisYajbZ4622AnbSVs2ZcKZ8/edit?usp=sharing)<br/><br/>
+
+
+
 **Ejercicio 1.** Exploración de archivos _fasta_ y _fastq_<br/><br/>
 Una vez iniciada la máquina virtual, acceda a una terminal.<br/>
 Los archivos que contienen las lecturas se encuentran en `/home/student/TP3/reads`<br/>
