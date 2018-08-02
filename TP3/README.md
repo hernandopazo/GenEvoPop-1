@@ -3,7 +3,7 @@
 
 
 **Ejercicio 1.** Exploración de archivos _fasta_ y _fastq_<br/><br/>
-Una vez iniciada la máquina virtual, acceda a una terminal.<br/>
+Una vez iniciada la máquina virtual, acceda a una terminal.
 Los archivos que contienen las lecturas se encuentran en `/home/student/TP3/reads`<br/>
 Utilizando comandos como `head` `tail` `less` explore los archivos _ejemplo.fasta_ y _ejemplo.fastq_ (tenga en cuenta que los archivos se encuentran comprimidos).<br/>
 \- ¿Cuáles son las diferencias entre estos tipos de archivos?<br/><br/>
