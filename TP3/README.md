@@ -1,4 +1,4 @@
-### [Trabajo Práctico N° 3. Control y pre-procesamiento de datos de NGS](https://docs.google.com/presentation/d/1JzTG1_mhRBua4LUjxI2eisYajbZ4622AnbSVs2ZcKZ8/edit?usp=sharing)<br/><br/>
+## [Trabajo Práctico N° 3. Control y pre-procesamiento de datos de NGS](https://docs.google.com/presentation/d/1JzTG1_mhRBua4LUjxI2eisYajbZ4622AnbSVs2ZcKZ8/edit?usp=sharing)<br/><br/>
 
 
 
