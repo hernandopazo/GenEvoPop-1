@@ -1,4 +1,4 @@
-## [Trabajo Práctico N° 3. Control y pre-procesamiento de datos de NGS](https://docs.google.com/presentation/d/1JzTG1_mhRBua4LUjxI2eisYajbZ4622AnbSVs2ZcKZ8/edit?usp=sharing)<br/><br/>
+### [Trabajo Práctico N° 3. Control y pre-procesamiento de datos de NGS](https://docs.google.com/presentation/d/1JzTG1_mhRBua4LUjxI2eisYajbZ4622AnbSVs2ZcKZ8/edit?usp=sharing)<br/><br/>
 
 
 
@@ -21,7 +21,7 @@ Desde el programa ir a _File -> Open_ y cargar el archivo _HISEQ4K\_wgs\_1.fastq
 \- ¿Qué acciones se podrían realizar para mejorar la calidad?<br/><br/>
 Explorar y discutir las distintas opciones que ofrece el programa, y repetir para el conjunto de archivos con extensión _.fastq_. Note que desde el programa se puede acceder a una ayuda sobre esto yendo a _Help -> Contents... -> Analysis Modules_.<br/>
 \- ¿Qué puede decir sobre las distintas tecnologías y sets de datos?<br/><br/>
-**Ejercicio 3.**<br/><br/>
+**Ejercicio 3.** Procesamiento de lecturas.<br/><br/>
 Dependiendo de lo observado en el análisis de calidad inicial, las secuencias pueden ser filtradas por calidad, longitud, y recortadas de distintas formas para mejorar su calidad global. También pueden eliminarse adaptarores incorporados durante el proceso de preparación de las librerías que hayan resultado secuenciados.<br/>
 Para las lecturas provenientes de la plataforma Illumina, el programa [Trimmomatic](www.usadellab.org/cms/?page=trimmomatic) tiene la capacidad de realizar todas estas tareas, de forma rápida y flexible. En el [manual](www.usadellab.org/cms/uploads/supplementary/Trimmomatic/TrimmomaticManual_V0.32.pdf) del programa se detallan sus distintas posibilidades y sintaxis.<br/><br/>
 A continuación realizaremos las siguientes acciones en el set de datos paired-end _MISEQ\_wgs_:<br/>
