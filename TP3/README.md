@@ -8,7 +8,7 @@ Explore los archivos con extensión _fastq_ de la carpeta.<br/>
 Como lo sugieren en su nombre, estos archivos corresponden a secuencias producidas con tecnología Illumina, PacBio y Oxford Nanopore de distintos orígenes.<br/>
 \-¿Qué diferencias encuentra entre las lecturas producidas por las distintas tecnologías?<br/><br/>
 **Ejercicio 2.** Control de calidad de secuencias.<br/><br/>
-[FastQC](www.bioinformatics.babraham.ac.uk/projects/fastqc) es un programa que permite visualizar estadísticas relacionadas a la calidad de la secuenciación en instrumentos de nueva generación, para determinar posibles desviaciones en los datos esperados.
+[FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc) es un programa que permite visualizar estadísticas relacionadas a la calidad de la secuenciación en instrumentos de nueva generación, para determinar posibles desviaciones en los datos esperados.
 Para ejecutar de forma interactiva, abrir un terminal y escribir `fastqc &` en la línea de comandos.<br/>
 Desde el programa ir a _File -> Open_ y cargar el archivo _HISEQ4K\_wgs\_1.fastq.gz_. Los análisis se comenzarán a realizar automáticamente. Realizar los mismo para el archivo _HISEQ4K\_wgs\_2.fastq.gz_. <br/>
 \- ¿Cuántas lecturas tiene cada archivo?<br/>
