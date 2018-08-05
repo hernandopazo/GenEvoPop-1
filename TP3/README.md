@@ -6,7 +6,7 @@ Utilizando comandos como `head` `tail` `less` explore los archivos _ejemplo.fast
 \- ¿Cuáles son las diferencias entre estos tipos de archivos?<br/><br/>
 Explore los archivos con extensión _fastq_ de la carpeta.<br/>
 Como lo sugieren en su nombre, estos archivos corresponden a secuencias producidas con tecnología Illumina, PacBio y Oxford Nanopore de distintos orígenes.<br/>
-\-¿Qué diferencias encuentra entre las lecturas producidas por las distintas tecnologías?<br/><br/>
+\- ¿Qué diferencias encuentra entre las lecturas producidas por las distintas tecnologías?<br/><br/>
 **Ejercicio 2.** Control de calidad de secuencias.<br/><br/>
 [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc) es un programa que permite visualizar estadísticas relacionadas a la calidad de la secuenciación en instrumentos de nueva generación, para determinar posibles desviaciones en los datos esperados.
 Para ejecutar de forma interactiva, abrir un terminal y escribir `fastqc &` en la línea de comandos.<br/>
