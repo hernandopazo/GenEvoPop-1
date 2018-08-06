@@ -5,7 +5,7 @@ Trabajos Prácticos desarrollados para la materia de grado [**Genómica Evolutiv
 
 _D.N. De Panis -docente colaborador-_
 
-### [TP2: Introducción a Linux](https://github.com/lunfardista/GenEvoPop/blob/master/TP3/README.md)
+### TP2: Introducción a Linux
 ### TP3: [Control y pre-procesamiento de datos de NGS](https://github.com/lunfardista/GenEvoPop/blob/master/TP3/README.md)
 ### TP4: Introducción al ensamblado genómico
 ### TP5: Introducción a RNA-Seq
