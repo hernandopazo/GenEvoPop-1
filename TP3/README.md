@@ -1,6 +1,9 @@
 ### [Trabajo Práctico N° 3. Control y pre-procesamiento de datos de NGS](https://docs.google.com/presentation/d/1JzTG1_mhRBua4LUjxI2eisYajbZ4622AnbSVs2ZcKZ8/edit?usp=sharing)<br/><br/>
+
+
 **Ejercicio 1.** Exploración de archivos _fasta_ y _fastq_<br/><br/>
-Una vez iniciada la máquina virtual, acceda a una terminal.<br/>
+
+Una vez iniciada la máquina virtual, acceda a una terminal.
 Los archivos que contienen las lecturas se encuentran en `/home/student/TP3/reads`<br/>
 Utilizando comandos como `head` `tail` `less` explore los archivos _ejemplo.fasta_ y _ejemplo.fastq_ (tenga en cuenta que los archivos se encuentran comprimidos).<br/>
 \- ¿Cuáles son las diferencias entre estos tipos de archivos?<br/><br/>
