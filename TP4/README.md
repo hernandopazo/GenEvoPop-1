@@ -20,13 +20,10 @@ Ejecutando el siguiente código puede ver el funcionamiento del script:
 \- ¿Cuántos ensamblados generará el script?
 
 A continuación se utilizará la misma idea del script para crear todos lo directorios necesarios para los distintos ensamblados que se llevaran a cabo. Ejecute las siguientes líneas de código:
+`for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoSINGLE/abyss/k"$i"; done`
 
-    for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoSINGLE/abyss/k"$i"; done
+`for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoPAIRED/abyss/k"$i"; done`
 
-
-    for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoPAIRED/abyss/k"$i"; done
-
-
-    for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/S.aureus/abyss/k"$i"; done
+`for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/S.aureus/abyss/k"$i"; done`
 
 
