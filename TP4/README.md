@@ -10,7 +10,7 @@ En la carpeta `/home/student/TP4/reads/` hay lecturas provenientes de la secuenc
 \- ¿Hace falta realizar sobre las lecturas algún procesado relacionado con la calidad de secuenciación?<br/><br/>
 
 Debido a que ABySS requiere que se declare un valor de Kmer, una estrategia que se suele utilizar es realizar distintos ensamblados modificando ese parámetro para luego seleccionar el mejor dentro de una métrica en particular.
-Explore el script `abyss_script.sh`.
+Explore el script `abyss_script.sh`.<br/>
 \- ¿Qué sucede si ejecutamos la siguiente líneas de código?: `seq 29 2 47`
 
 Ejecutando el siguiente código puede ver el funcionamiento del script:
