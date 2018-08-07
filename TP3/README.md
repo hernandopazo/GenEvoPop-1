@@ -44,7 +44,11 @@ Para ello, primero crear una carpeta llamada `trimm` dentro de la carpeta `/home
   
 Explorar el registro generado (archivo _.log_). Visualizar en FastQC los archivos generados.<br/>
 \- ¿Cuántas lecturas quedaron?<br/>
-\- ¿Mejoró la calidad?<br/><br/>
+\- ¿Mejoró la calidad?
+
 Volver a ejecutar Trimmomatic pero modificando los parámetros por `LEADING:20` `TRAILING:20` `SLIDINGWINDOW:4:20`. Comparar con el resultado obtenido anteriormente.<br/>
-A partir de la información que se encuentra en el manual del programa, ¿podría usar los parámetros `HEADCROP` y `CROP`? ¿Qué cambio en el código debería introducir si el set de datos no fuera pareado?<br/>
-Intentar mejorar las otras lecturas de Illumina disponibles.<br/><br/>
+A partir de la información que se encuentra en el manual del programa:<br/>
+\- ¿Podría usar los parámetros `HEADCROP` y `CROP`?<br/>
+\- ¿Qué cambio en el código debería introducir si el set de datos no fuera pareado?
+
+Intentar mejorar las otras lecturas de Illumina disponibles.
