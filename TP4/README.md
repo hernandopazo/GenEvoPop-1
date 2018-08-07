@@ -16,7 +16,8 @@ Explore el script `abyss_scripts.sh`.<br/>
 Ejecutando el siguiente código puede ver el funcionamiento del script:
 
     for i in $(seq 29 2 47); do echo abyss -C /home/student/TP4/assemblies/mitoPAIRED/abyss/k"$i" k="$i" \
-    name=Saur.k"$i" in='/home/student/TP4/reads/sim_Staur_1.fq.gz /home/student/TP4/reads/sim_Staur_2.fq.gz'; done
+    name=Saur.k"$i" in='/home/student/TP4/reads/sim_Staur_1.fq.gz /home/student/TP4/reads/sim_Staur_2.fq.gz'; \
+    done
 \- ¿Cuántos ensamblados generará el script?
 
 A continuación se utilizará la misma idea del script para crear todos lo directorios necesarios para los distintos ensamblados que se llevaran a cabo. Ejecute las siguientes líneas de código:<br/>
