@@ -10,13 +10,13 @@ En la carpeta `/home/student/TP4/reads/` hay lecturas provenientes de la secuenc
 \- ¿Hace falta realizar sobre las lecturas algún procesado relacionado con la calidad de secuenciación?<br/><br/>
 
 Debido a que ABySS requiere que se declare un valor de Kmer, una estrategia que se suele utilizar es realizar distintos ensamblados modificando ese parámetro para luego seleccionar el mejor dentro de una métrica en particular.
-Explore el script `abyss_script.sh`.<br/>
+Explore el script `abyss_scripts.sh`.<br/>
 \- ¿Qué sucede si ejecutamos la siguiente líneas de código?: `seq 29 2 47`
 
 Ejecutando el siguiente código puede ver el funcionamiento del script:
 
-    for i in $(seq 29 2 47); do echo abyss -k "$i" /home/student/TP4/reads/sra_data.fastq \
-    –o /home/student/TP4/abyss/contigs-k"$i".fa; done
+    for i in $(seq 29 2 47); do echo abyss -C /home/student/TP4/assemblies/mitoPAIRED/abyss/k"$i" k="$i" \
+    name=Saur.k"$i" in='/home/student/TP4/reads/sim_Staur_1.fq.gz /home/student/TP4/reads/sim_Staur_2.fq.gz'; done
 \- ¿Cuántos ensamblados generará el script?
 
 A continuación se utilizará la misma idea del script para crear todos lo directorios necesarios para los distintos ensamblados que se llevaran a cabo. Ejecute las siguientes líneas de código:<br/>
