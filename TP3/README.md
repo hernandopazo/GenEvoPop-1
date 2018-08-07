@@ -6,18 +6,23 @@ Utilizando comandos como `head` `tail` `less` explore los archivos _ejemplo.fast
 \- ¿Cuáles son las diferencias entre estos tipos de archivos?<br/><br/>
 Explore los archivos con extensión _fastq_ de la carpeta.<br/>
 Como lo sugieren en su nombre, estos archivos corresponden a secuencias producidas con tecnología Illumina, PacBio y Oxford Nanopore de distintos orígenes.<br/>
-\- ¿Qué diferencias encuentra entre las lecturas producidas por las distintas tecnologías?<br/><br/>
-**Ejercicio 2.** Control de calidad de secuencias.<br/><br/>
+\- ¿Qué diferencias encuentra entre las lecturas producidas por las distintas tecnologías?
+
+**Ejercicio 2.** Control de calidad de secuencias.
+
 [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc) es un programa que permite visualizar estadísticas relacionadas a la calidad de la secuenciación en instrumentos de nueva generación, para determinar posibles desviaciones en los datos esperados.
-Para ejecutar de forma interactiva, abrir un terminal y escribir `fastqc &` en la línea de comandos.<br/>
-Desde el programa ir a _File -> Open_ y cargar el archivo _HISEQ4K\_wgs\_1.fastq.gz_. Los análisis se comenzarán a realizar automáticamente. Realizar los mismo para el archivo _HISEQ4K\_wgs\_2.fastq.gz_. <br/>
-\- ¿Cuántas lecturas tiene cada archivo?<br/>
-\- ¿Cuál es el largo de las lecturas?<br/>
-\- ¿Cómo se comportan las lecturas hacia el final?<br/>
-\- ¿Qué análisis dan buen y mal resultado?<br/>
-\- ¿Qué acciones se podrían realizar para mejorar la calidad?<br/><br/>
-Explorar y discutir las distintas opciones que ofrece el programa, y repetir para el conjunto de archivos con extensión _.fastq_. Note que desde el programa se puede acceder a una ayuda sobre esto yendo a _Help -> Contents... -> Analysis Modules_.<br/>
-\- ¿Qué puede decir sobre las distintas tecnologías y sets de datos?<br/><br/>
+Para ejecutar de forma interactiva, abrir un terminal y escribir `fastqc &` en la línea de comandos.
+Desde el programa ir a _File -> Open_ y cargar el archivo _HISEQ4K\_wgs\_1.fastq.gz_. Los análisis se comenzarán a realizar automáticamente. Realizar los mismo para el archivo _HISEQ4K\_wgs\_2.fastq.gz_.
+\- ¿Cuántas lecturas tiene cada archivo?
+\- ¿Cuál es el largo de las lecturas?
+\- ¿Cómo se comportan las lecturas hacia el final?
+\- ¿Qué análisis dan buen y mal resultado?
+\- ¿Qué acciones se podrían realizar para mejorar la calidad?
+
+Explorar y discutir las distintas opciones que ofrece el programa, y repetir para el conjunto de archivos con extensión _.fastq_. Note que desde el programa se puede acceder a una ayuda sobre esto yendo a _Help -> Contents... -> Analysis Modules_.
+
+\- ¿Qué puede decir sobre las distintas tecnologías y sets de datos?
+
 **Ejercicio 3.** Procesamiento de lecturas.<br/><br/>
 Dependiendo de lo observado en el análisis de calidad inicial, las secuencias pueden ser filtradas por calidad, longitud, y recortadas de distintas formas para mejorar su calidad global. También pueden eliminarse adaptarores incorporados durante el proceso de preparación de las librerías que hayan resultado secuenciados.<br/>
 Para las lecturas provenientes de la plataforma Illumina, el programa [Trimmomatic](https://www.usadellab.org/cms/?page=trimmomatic) tiene la capacidad de realizar todas estas tareas, de forma rápida y flexible. En el [manual](https://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/TrimmomaticManual_V0.32.pdf) del programa se detallan sus distintas posibilidades y sintaxis.<br/><br/>
