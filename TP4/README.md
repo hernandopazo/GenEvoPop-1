@@ -1,6 +1,7 @@
 ### [Trabajo Práctico N° 4. Introducción al Ensamblado Genómico](https://docs.google.com/presentation/)<br/><br/>
 
-**Ejercicio 1.** Ensamblado _de novo_ y evaluación.<br/><br/>
+
+**Ejercicio 1.** Ensamblado _de novo_ y evaluación.
 
 En primer lugar se utilizará [ABySS](http://www.bcgsc.ca/platform/bioinfo/software/abyss/), un ensamblador que resulta adecuado para una primera ronda de ensamblajes ya que su ejecución es sencilla y no requiere grandes recursos computacionales. Además de ser flexible en cuanto a los tamaños genómicos que soporta, requiere que se declare un valor de kmer para la construcción del grafo.<br/>
 Una vez iniciada la máquina virtual, acceda a una terminal y sitúese en `/home/student/TP4`<br/>
