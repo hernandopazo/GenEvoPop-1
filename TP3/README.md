@@ -28,7 +28,13 @@ A continuación realizaremos las siguientes acciones en el set de datos paired-e
 . Descartar aquellas lecturas que luego del procesado tengan menos de 50 nucleótidos, utilizando el parámetro `MINLEN:50`.<br/>
 Para ello, primero crear una carpeta llamada `trimm` dentro de la carpeta `/home/student/TP3/reads/`, y luego ejecutar la siguiente línea de código:
 
-	trimmomatic PE -trimlog /home/student/TP3/reads/trimm/MISEQ_wgs_trimming.log /home/student/TP3/reads/MISEQ_wgs_1.fastq.gz /home/student/TP3/reads/MISEQ_wgs_2.fastq.gz /home/student/TP3/reads/trimm/MISEQ_wgs_trim_1p.fastq.gz /home/student/TP3/reads/trimm/MISEQ_wgs_trim_1u.fastq.gz /home/student/TP3/reads/trimm/MISEQ_wgs_trim_2p.fastq.gz /home/student/TP3/reads/trimm/MISEQ_wgs_trim_2u.fastq.gz ILLUMINACLIP:/home/student/software/Trimmomatic-0.38/adapters/TruSeq3-PE.fa:2:30:10 LEADING:10 TRAILING:10 SLIDINGWINDOW:6:10 MINLEN:50
+	trimmomatic PE -trimlog /home/student/TP3/reads/trimm/MISEQ_wgs_trimming.log \
+		/home/student/TP3/reads/MISEQ_wgs_1.fastq.gz /home/student/TP3/reads/MISEQ_wgs_2.fastq.gz \
+		/home/student/TP3/reads/trimm/MISEQ_wgs_trim_1p.fastq.gz /home/student \
+		/TP3/reads/trimm/MISEQ_wgs_trim_1u.fastq.gz /home/student/TP3/reads/trimm/MISEQ_wgs_trim_2p.fastq.gz \
+		/home/student/TP3/reads/trimm/MISEQ_wgs_trim_2u.fastq.gz \
+		ILLUMINACLIP:/home/student/software/Trimmomatic-0.38/adapters/TruSeq3-PE.fa:2:30:10 \
+		LEADING:10 TRAILING:10 SLIDINGWINDOW:6:10 MINLEN:50
   
 Explorar el registro generado (archivo _.log_). Visualizar en FastQC los archivos generados.<br/>
 \- ¿Cuántas lecturas quedaron?<br/>
