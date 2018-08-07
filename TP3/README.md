@@ -52,15 +52,3 @@ A partir de la información que se encuentra en el manual del programa:<br/>
 \- ¿Qué cambio en el código debería introducir si el set de datos no fuera pareado?
 
 Intentar mejorar las otras lecturas de Illumina disponibles.
-
-
-hola
-=====
-hola
-====
-hola
-===
-hola
-==
-hola
-=
