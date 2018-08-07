@@ -12,12 +12,11 @@ Como lo sugieren en su nombre, estos archivos corresponden a secuencias producid
 
 [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc) es un programa que permite visualizar estadísticas relacionadas a la calidad de la secuenciación en instrumentos de nueva generación, para determinar posibles desviaciones en los datos esperados.
 Para ejecutar de forma interactiva, abrir un terminal y escribir `fastqc &` en la línea de comandos.
-Desde el programa ir a _File -> Open_ y cargar el archivo _HISEQ4K\_wgs\_1.fastq.gz_. Los análisis se comenzarán a realizar automáticamente. Realizar los mismo para el archivo _HISEQ4K\_wgs\_2.fastq.gz_.
-
-\- ¿Cuántas lecturas tiene cada archivo?
-\- ¿Cuál es el largo de las lecturas?
-\- ¿Cómo se comportan las lecturas hacia el final?
-\- ¿Qué análisis dan buen y mal resultado?
+Desde el programa ir a _File -> Open_ y cargar el archivo _HISEQ4K\_wgs\_1.fastq.gz_. Los análisis se comenzarán a realizar automáticamente. Realizar los mismo para el archivo _HISEQ4K\_wgs\_2.fastq.gz_.<br/>
+\- ¿Cuántas lecturas tiene cada archivo?<br/>
+\- ¿Cuál es el largo de las lecturas?<br/>
+\- ¿Cómo se comportan las lecturas hacia el final?<br/>
+\- ¿Qué análisis dan buen y mal resultado?<br/>
 \- ¿Qué acciones se podrían realizar para mejorar la calidad?
 
 Explorar y discutir las distintas opciones que ofrece el programa, y repetir para el conjunto de archivos con extensión _.fastq_. Note que desde el programa se puede acceder a una ayuda sobre esto yendo a _Help -> Contents... -> Analysis Modules_.
