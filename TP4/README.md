@@ -8,3 +8,15 @@ En primer lugar se utilizará [ABySS](http://www.bcgsc.ca/platform/bioinfo/softw
 Una vez iniciada la máquina virtual, acceda a una terminal y sitúese en `/home/student/TP4`.<br/>
 En la carpeta `/home/student/TP4/reads/` hay lecturas provenientes de la secuenciación de ADN mitocondrial humano producidas con tecnología Illumina [single-read](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=DRR001063) y [paired-end](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR2075910), pero de experimentos distintos. También hay lecturas Illumina de una secuenciación simulada de _Staphylococcus aureus_.<br/>
 \- ¿Hace falta realizar sobre las lecturas algún procesado relacionado con la calidad de secuenciación?<br/><br/>
+
+Debido a que ABySS requiere que se declare un valor de Kmer, una estrategia que se suele utilizar es realizar distintos ensamblados modificando ese parámetro para luego seleccionar el mejor dentro de una métrica en particular.
+Explore el script `abyss_script.sh`.
+\- ¿Qué sucede si ejecutamos la siguiente líneas de código?: `seq 29 2 47`
+
+Ejecutando el siguiente código puede ver el funcionamiento del script:
+
+    for i in $(seq 29 2 47); do echo abyss -k "$i" /home/student/TP4/reads/sra_data.fastq \
+    –o /home/student/TP4/abyss/contigs-k"$i".fa; done
+
+
+¿Cuántos ensamblados se generan luego del script?
