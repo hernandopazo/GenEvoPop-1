@@ -17,6 +17,4 @@ Ejecutando el siguiente código puede ver el funcionamiento del script:
 
     for i in $(seq 29 2 47); do echo abyss -k "$i" /home/student/TP4/reads/sra_data.fastq \
     –o /home/student/TP4/abyss/contigs-k"$i".fa; done
-
-
-¿Cuántos ensamblados se generan luego del script?
+\- ¿Cuántos ensamblados generará el script?
