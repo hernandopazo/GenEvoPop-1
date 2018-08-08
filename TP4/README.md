@@ -72,4 +72,6 @@ Ejecute el siguiente código en la terminal para ensamblar las lecturas resultan
 Para evaluar ensamblados de una forma completa e informativa, se utilizará el programa [QUAST](http://cab.spbu.ru/software/quast).
 
 
+python quast.py  -o /home/diego/assemblies/quast -R /home/diego/Dropbox/Projects/GenEvoPop/TP4/ref_genome/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa -g /home/diego/Dropbox/Projects/GenEvoPop/TP4/ref_genome/HS.MT.gff -t 2 --single /home/diego/Dropbox/Projects/GenEvoPop/TP4/reads/GA2_DRR001063_redset.fastq.gz /home/diego/assemblies/mitoSINGLE/abyss/k41/Hsap_mitoSE.k41-3.fa /home/diego/assemblies/mitoSINGLE/spades/contigs.fasta
+
 
