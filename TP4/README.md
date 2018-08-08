@@ -1,7 +1,7 @@
 ### [Trabajo Práctico N° 4. Introducción al Ensamblado Genómico](https://docs.google.com/presentation/)<br/><br/>
 
 
-**Ejercicio 1.** Ensamblado _de novo_ y evaluación.
+**Ejercicio 1.** Ensamblado _de novo_ con ABySS
 
 En primer lugar se utilizará [ABySS](http://www.bcgsc.ca/platform/bioinfo/software/abyss/), un ensamblador que resulta adecuado para una primera ronda de ensamblajes ya que su ejecución es sencilla y no requiere grandes recursos computacionales. Además de ser flexible en cuanto a los tamaños genómicos que soporta, requiere que se declare un valor de kmer para la construcción del grafo.
 
@@ -41,8 +41,10 @@ El asterisco (`*`) significa que ahí puede haber 0 o más caracteres. En google
 
 \- ¿Cuáles fueron los mejores ensamblados en cada caso?
 
-\- Si se tiene en cuenta que el genoma mitocondrial humano tiene un tamaño de 16569bp, ¿cuál es el mejor ensamblado para la mitocondria humana? 
+\- Si se tiene en cuenta que el genoma mitocondrial humano tiene un tamaño de 16569bp, ¿cuál es el mejor ensamblado para la mitocondria humana? ¿Por qué?
 
 
+**Ejercicio 2.** Ensamblado _de novo_ con SPAdes
 
+A continuación vamos a repetir los ensamblados pero con otro programa: [SPAdes](http://cab.spbu.ru/software/spades/). Este ensamblador funciona muy bien con genomas chicos y no necesita que se declare un valor de kmer ya que usa una estrategia multi-kmer predetermianda.
 
