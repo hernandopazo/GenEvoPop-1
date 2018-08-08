@@ -71,7 +71,16 @@ Ejecute el siguiente código en la terminal para ensamblar las lecturas resultan
 
 Para evaluar ensamblados de una forma completa e informativa, se utilizará el programa [QUAST](http://cab.spbu.ru/software/quast).
 
+En primer lugar se evaluarán los distintos ensamblados realizados con los sets de datos de mitocondria humana. Debido a que existe un genoma mitocondrial humano de referencia, la información de su secuencia y anotación se puede utilizar para obtener mejores estadísticas con QUAST.
+En primer lugar crear una carpeta llamada quast dentro de assemblies, con una subcarpeta llamada mitoSINGLE. A continuación elegir los que creemos son los dos mejores ensamblados priducidos con ABySS para el set de datos single-read y el ensamblado porducido con SPAdes, y ejecutar un código similar al siguiente:
 
-python quast.py  -o /home/diego/assemblies/quast -R /home/diego/Dropbox/Projects/GenEvoPop/TP4/ref_genome/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa -g /home/diego/Dropbox/Projects/GenEvoPop/TP4/ref_genome/HS.MT.gff -t 2 --single /home/diego/Dropbox/Projects/GenEvoPop/TP4/reads/GA2_DRR001063_redset.fastq.gz /home/diego/assemblies/mitoSINGLE/abyss/k41/Hsap_mitoSE.k41-3.fa /home/diego/assemblies/mitoSINGLE/spades/contigs.fasta
+    python quast.py -o /home/student/TP4/assemblies/quast \
+    -R /home/student/TP4/ref_genome/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa.gz \
+    -g /home/student/TP4/ref_genome/HS.MT.gff.gz -t 2 -l abss39.SE,abss41.SE,spds.SE \
+    --circos --single /home/student/TP4/reads/GA2_DRR001063_redset.fastq.gz \
+    /home/student/TP4/assemblies/mitoSINGLE/abyss/k41/Hsap_mitoSE.k39-unitigs.fa \
+    /home/student/TP4/assemblies/mitoSINGLE/abyss/k41/Hsap_mitoSE.k41-unitigs.fa \
+    /home/student/TP4/assemblies/mitoSINGLE/spades/scaffolds.fasta
+
 
 
