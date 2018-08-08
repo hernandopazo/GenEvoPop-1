@@ -31,7 +31,9 @@ Para correr el script, ejecute en la terminal la siguiente línea de código:
 `./abyss_scripts.sh/`
 El segmento de código ejecutado corresponde a la secuenciación single-read. Para ejecutar las otras secciones del código, hay que comentar la sección ya ejecutada y descomentar las que se quiera ejecutar. Esto se hace añadiento y eliminando el caracter `#` de las líneas necesarias. Ejecute el script para cada sección de código.
 
-
+ABySS facilita una rápida y básica inspección de los resultados obtenidos a partir de una tabla que se guarda en un archivo finalizado en "stats" dentro del directorio de cada ensamblado. Para visualizar comparativamente los ensamblados realizados con distintos valores de kmer, ejecute la siguiente linea de código en la terminal:
+`cat /home/student/TP4/assemblies/mitoSINGLE/abyss/k*/*stats`
+El asterisco (*) significa que ahí puede haber 0 o más caracteres. En google puede encontrar más información sobre [wildcards](http://tldp.org/LDP/GNU-Linux-Tools-Summary/html/x11655.htm) y [regular expressions](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html) muy útiles en la terminal. 
 
 
 
