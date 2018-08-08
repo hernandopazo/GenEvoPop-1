@@ -82,5 +82,12 @@ En primer lugar crear una carpeta llamada quast dentro de assemblies, con una su
     /home/student/TP4/assemblies/mitoSINGLE/abyss/k41/Hsap_mitoSE.k41-unitigs.fa \
     /home/student/TP4/assemblies/mitoSINGLE/spades/scaffolds.fasta
 
+Abrir el archivo report.html que se genera en la carpeta de salida con un navegador y explore los recursos que ofrece.
+\- ¿Que evaluación podría hacer de los ensamblados?
+
+
+Repita el procedimiento para los otros sets de datos, creando las carpetas necesarias y modificando el código para ejecutar QUAST como sea necesario.
+
+
 
 
