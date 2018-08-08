@@ -37,11 +37,11 @@ ABySS facilita una rápida y básica inspección de los resultados obtenidos a p
 
 El asterisco (`*`) significa que ahí puede haber 0 o más caracteres. En google puede encontrar más información sobre [wildcards](http://tldp.org/LDP/GNU-Linux-Tools-Summary/html/x11655.htm) y [regular expressions](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html) muy útiles en la terminal.<br/>
 
-\- ¿Cómo guardaría esos resultados en un archivo llamado abyss_mitoSINGLE.rslts? Realice lo mismo para los otros grupos de ensamblados.
+\- ¿Cómo guardaría esos resultados en un archivo llamado `abyss_mitoSINGLE.rslts`? Realice lo mismo para los otros grupos de ensamblados.
 
-\- ¿Cuales fueron los mejores ensamblados en cada caso?
+\- ¿Cuáles fueron los mejores ensamblados en cada caso?
 
-\_ Si se tiene en cuenta que el genoma mitocondrial humano tiene un tamaño de 16569bp, ¿cuál es el mejor ensamblado para la mitocondria humana? 
+\- Si se tiene en cuenta que el genoma mitocondrial humano tiene un tamaño de 16569bp, ¿cuál es el mejor ensamblado para la mitocondria humana? 
 
 
 
