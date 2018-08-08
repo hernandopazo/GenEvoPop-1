@@ -56,3 +56,20 @@ Ejecute las siguientes líneas de código para crear todos lo directorios necesa
 
 `for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/S.aureus/abyss/k"$i"; done`
 
+Ejecute el siguiente código en la terminal para ensamblar las lecturas resultantes del set de datos paired-end de mitocondria: 
+
+    python /home/student/software/SPAdes-3.12.0-Linux/bin/spades.py \
+    -1 /home/student/TP4/reads/MISEQ_SRR2075910_trim_1p.fastq.gz \
+    -2 /home/student/TP4/reads/MISEQ_SRR2075910_trim_2p.fastq.gz \
+    -s /home/student/TP4/reads/MISEQ_SRR2075910_trim_u.fastq.gz --only-assembler \
+    --careful -t 2 -m 4 -o /home/student/TP4/assemblies/mitoPAIRED/spades
+
+\- ¿Cómo cambiaría el código para correr los set de datos restantes?
+
+
+**Ejercicio 3.** Evaluación del ensamblado
+
+Para evaluar ensamblados de una forma completa e informativa, se utilizará el programa [QUAST](http://cab.spbu.ru/software/quast).
+
+
+
