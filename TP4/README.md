@@ -10,7 +10,10 @@ En la carpeta `/home/student/TP4/reads/` hay lecturas provenientes de la secuenc
 \- ¿Hace falta realizar algún procesado sobre las lecturas relacionado con la calidad de secuenciación? ¿En qué set de lecturas? Si fuera el caso, procesar el set que haga falta con Trimmomatic de la misma forma que lo hecho anteriormente en el [TP3](https://github.com/lunfardista/GenEvoPop/tree/master/TP3), pero además combinar los dos archivos desapareados resultantes (si los hubiera) en uno solo.<br/><br/>
 
 Debido a que ABySS requiere que se declare un valor de Kmer, una estrategia que se suele utilizar es realizar distintos ensamblados modificando ese parámetro para luego seleccionar el mejor dentro de una métrica en particular. Para tal fin, se construyó el script `abyss_scripts.sh`. Explore el archivo e intente identificar las distintas secciones del código.<br/>
-\- ¿Qué sucede si ejecutamos la siguiente líneas de código?: `seq 29 2 47`
+\- ¿Qué sucede si ejecutamos la siguiente líneas de código?:
+```
+seq 29 2 47
+```
 
 Ejecutando el siguiente código puede tener una idea más clara del funcionamiento del script:
 ```
@@ -43,7 +46,7 @@ ABySS facilita una rápida y básica inspección de los resultados obtenidos a p
 cat /home/student/TP4/assemblies/mitoSINGLE/abyss/k*/*stats
 ```
 
-El asterisco (`*`) significa que ahí puede haber 0 o más caracteres. En google puede encontrar más información sobre [wildcards](http://tldp.org/LDP/GNU-Linux-Tools-Summary/html/x11655.htm) y [regular expressions](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html) muy útiles en la terminal.<br/>
+El asterisco (`*`) significa que ahí puede haber 0 o más caracteres. En google puede encontrar más información sobre [wildcards](http://tldp.org/LDP/GNU-Linux-Tools-Summary/html/x11655.htm) y [regular expressions](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html), muy útiles en la terminal.<br/>
 
 \- ¿Cómo guardaría esos resultados en un archivo llamado `abyss_mitoSINGLE.rslts`? Realice lo mismo para los otros grupos de ensamblados.
 
@@ -76,7 +79,7 @@ python /home/student/software/SPAdes-3.12.0-Linux/bin/spades.py \
 --only-assembler --careful -t 2 -m 4 -o /home/student/TP4/assemblies/mitoPAIRED/spades
 ```
 
-\- ¿Cómo cambiaría el código para correr los set de datos restantes?
+\- ¿Cómo cambiaría el código para correr los set de datos restantes?<br/><br/>
 
 
 **Ejercicio 3.** Evaluación del ensamblado
