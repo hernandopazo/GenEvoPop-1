@@ -106,4 +106,34 @@ Repita el procedimiento para los otros sets de datos, creando las carpetas neces
 
 
 
+\- bla<br/><br/>
+
+
+**Ejercicio 4.** Alineamiento a una referencia y visualización
+
+hisat2-build /home/diego/Dropbox/Projects/GenEvoPop/TP4/ref_genome/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa.gz /home/diego/Dropbox/Projects/GenEvoPop/TP4/ref_genome/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT
+
+
+crear directorio index en ref_genome
+copiar el genoma mitocondrial de referencia a index y descomprimirlo
+
+./hisat2-build /home/diego/Dropbox/Projects/GenEvoPop/TP4/ref_genome/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa /home/diego/Dropbox/Projects/GenEvoPop/TP4/ref_genome/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT
+
+crear directorio alignments y mitoSINGLE y mitoPAIRED
+
+hisat2 -p  2 -x /home/diego/Dropbox/Projects/GenEvoPop/TP4/ref_genome/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT -U /home/diego/Dropbox/Projects/GenEvoPop/TP4/reads/GA2_DRR001063_redset.fastq.gz -S /home/diego/Dropbox/Projects/GenEvoPop/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.sam
+
+-1
+-2
+
+
+./samtools view -b /home/diego/Dropbox/Projects/GenEvoPop/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.sam > /home/diego/Dropbox/Projects/GenEvoPop/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.bam
+
+./samtools sort -o /home/diego/Dropbox/Projects/GenEvoPop/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.sorted.bam /home/diego/Dropbox/Projects/GenEvoPop/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.bam
+
+samtools index /home/diego/Dropbox/Projects/GenEvoPop/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.sorted.bam
+
+
+
+http://software.broadinstitute.org/software/igv/AlignmentData
 
