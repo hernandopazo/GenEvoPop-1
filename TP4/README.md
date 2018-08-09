@@ -27,8 +27,9 @@ for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoPAIRED/aby
 ```
 for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoSINGLE/abyss/k"$i"; done
 ```
-
-`for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/S.aureus/abyss/k"$i"; done`
+```
+for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/S.aureus/abyss/k"$i"; done
+```
 
 Para correr el script, ejecute en la terminal la siguiente línea de código:<br/>
 `./abyss_scripts.sh/`
@@ -55,11 +56,9 @@ Ejecute las siguientes líneas de código para crear todos lo directorios necesa
 ```
 for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoPAIRED/abyss/k"$i"; done
 ```
-
 ```
 for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoSINGLE/abyss/k"$i"; done
 ```
-
 ```
 for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/S.aureus/abyss/k"$i"; done
 ```
@@ -69,8 +68,8 @@ Ejecute el siguiente código en la terminal para ensamblar las lecturas resultan
     python /home/student/software/SPAdes-3.12.0-Linux/bin/spades.py \
     -1 /home/student/TP4/reads/MISEQ_SRR2075910_trim_1p.fastq.gz \
     -2 /home/student/TP4/reads/MISEQ_SRR2075910_trim_2p.fastq.gz \
-    -s /home/student/TP4/reads/MISEQ_SRR2075910_trim_u.fastq.gz --only-assembler \
-    --careful -t 2 -m 4 -o /home/student/TP4/assemblies/mitoPAIRED/spades
+    -s /home/student/TP4/reads/MISEQ_SRR2075910_trim_u.fastq.gz \
+    --only-assembler --careful -t 2 -m 4 -o /home/student/TP4/assemblies/mitoPAIRED/spades
 
 \- ¿Cómo cambiaría el código para correr los set de datos restantes?
 
