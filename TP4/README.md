@@ -49,7 +49,7 @@ El asterisco (`*`) significa que ahí puede haber 0 o más caracteres. En google
 
 \- ¿Cuáles fueron los mejores ensamblados en cada caso?
 
-\- Si se tiene en cuenta que el genoma mitocondrial humano tiene un tamaño de 16569bp, ¿cuál es el mejor ensamblado para la mitocondria humana? ¿Por qué?
+\- Si se tiene en cuenta que el genoma mitocondrial humano tiene un tamaño de 16569bp, ¿cuál es el mejor ensamblado para la mitocondria humana? ¿Por qué?<br/><br/>
 
 
 **Ejercicio 2.** Ensamblado _de novo_ con SPAdes
