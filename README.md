@@ -8,10 +8,10 @@ _D.N. De Panis -docente colaborador-_<br/><br/><br/>
 
 
 
-### TP2: Introducción a Linux
+### TP2: [Introducción a Linux](https://github.com/lunfardista/GenEvoPop/blob/master/TP2/README.md)
 
 ### TP3: [Control y pre-procesamiento de datos de NGS](https://github.com/lunfardista/GenEvoPop/blob/master/TP3/README.md)
 
-### TP4: Introducción al ensamblado genómico
+### TP4: [Introducción al ensamblado genómico](https://github.com/lunfardista/GenEvoPop/blob/master/TP4/README.md)
 
-### TP5: Introducción a RNA-Seq
+### TP5: [Introducción a RNA-Seq](https://github.com/lunfardista/GenEvoPop/blob/master/TP5/README.md)
