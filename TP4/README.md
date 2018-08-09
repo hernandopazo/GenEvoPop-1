@@ -13,17 +13,20 @@ Debido a que ABySS requiere que se declare un valor de Kmer, una estrategia que 
 \- ¿Qué sucede si ejecutamos la siguiente líneas de código?: `seq 29 2 47`
 
 Ejecutando el siguiente código puede tener una idea más clara del funcionamiento del script:
-
-    for i in $(seq 29 2 47); do echo abyss -C /home/student/TP4/assemblies/mitoPAIRED/abyss/k"$i" k="$i" \
-    name=Saur.k"$i" in='/home/student/TP4/reads/sim_Staur_1.fq.gz /home/student/TP4/reads/sim_Staur_2.fq.gz'; \
-    done
+```
+for i in $(seq 29 2 47); do echo abyss -C /home/student/TP4/assemblies/mitoPAIRED/abyss/k"$i" k="$i" \
+name=Saur.k"$i" in='/home/student/TP4/reads/sim_Staur_1.fq.gz /home/student/TP4/reads/sim_Staur_2.fq.gz'; \
+done
+```
 \- ¿Cuántos ensamblados generará el script para cada set de datos?
 
-A continuación se utilizará la misma idea del script para crear todos lo directorios necesarios para los distintos ensamblados que se llevaran a cabo con ABySS. Ejecute las siguientes líneas de código:<br/>
-
-`for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoPAIRED/abyss/k"$i"; done`
-
-`for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoSINGLE/abyss/k"$i"; done`
+A continuación se utilizará la misma idea del script para crear todos lo directorios necesarios para los distintos ensamblados que se llevaran a cabo con ABySS. Ejecute las siguientes líneas de código:
+```
+for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoPAIRED/abyss/k"$i"; done
+```
+```
+for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoSINGLE/abyss/k"$i"; done
+```
 
 `for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/S.aureus/abyss/k"$i"; done`
 
