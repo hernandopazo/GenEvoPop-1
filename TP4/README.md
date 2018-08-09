@@ -50,9 +50,13 @@ A continuación vamos a repetir los ensamblados pero con otro programa: [SPAdes]
 
 Ejecute las siguientes líneas de código para crear todos lo directorios necesarios para los distintos ensamblados que se llevaran a cabo con SPAdes:<br/>
 
-`for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoPAIRED/abyss/k"$i"; done`
+```
+for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoPAIRED/abyss/k"$i"; done
+```
 
-`for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoSINGLE/abyss/k"$i"; done`
+```
+for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoSINGLE/abyss/k"$i"; done
+```
 
 `for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/S.aureus/abyss/k"$i"; done`
 
