@@ -50,7 +50,9 @@ A continuación vamos a repetir los ensamblados pero con otro programa: [SPAdes]
 
 Ejecute las siguientes líneas de código para crear todos lo directorios necesarios para los distintos ensamblados que se llevaran a cabo con SPAdes:<br/>
 
-`for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoPAIRED/abyss/k"$i"; done`
+```bash
+for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoPAIRED/abyss/k"$i"; done
+```
 
 `for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoSINGLE/abyss/k"$i"; done`
 
@@ -58,7 +60,7 @@ Ejecute las siguientes líneas de código para crear todos lo directorios necesa
 
 Ejecute el siguiente código en la terminal para ensamblar las lecturas resultantes del set de datos paired-end de mitocondria: 
 
-```bash
+```
 python /home/student/software/SPAdes-3.12.0-Linux/bin/spades.py \
 -1 /home/student/TP4/reads/MISEQ_SRR2075910_trim_1p.fastq.gz \
 -2 /home/student/TP4/reads/MISEQ_SRR2075910_trim_2p.fastq.gz \
