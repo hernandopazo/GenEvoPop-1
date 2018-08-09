@@ -31,13 +31,17 @@ for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/mitoSINGLE/aby
 for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/S.aureus/abyss/k"$i"; done
 ```
 
-Para correr el script, ejecute en la terminal la siguiente línea de código:<br/>
-`./abyss_scripts.sh/`
+Para correr el script, ejecute en la terminal la siguiente línea de código:
+```
+./abyss_scripts.sh/
+```
 
 El segmento de código ejecutado corresponde a la secuenciación single-read. Para ejecutar las otras secciones del código, hay que comentar la sección ya ejecutada y descomentar las que se quiera ejecutar. Esto se hace añadiento y eliminando el caracter `#` de las líneas necesarias. Ejecute el script para cada sección de código.
 
-ABySS facilita una rápida y básica inspección de los resultados obtenidos a partir de una tabla que se guarda en un archivo finalizado en "stats" dentro del directorio de cada ensamblado. Para visualizar comparativamente los ensamblados realizados con distintos valores de kmer, ejecute la siguiente linea de código en la terminal:<br/>
-`cat /home/student/TP4/assemblies/mitoSINGLE/abyss/k*/*stats`
+ABySS facilita una rápida y básica inspección de los resultados obtenidos a partir de una tabla que se guarda en un archivo finalizado en "stats" dentro del directorio de cada ensamblado. Para visualizar comparativamente los ensamblados realizados con distintos valores de kmer, ejecute la siguiente linea de código en la terminal:
+```
+cat /home/student/TP4/assemblies/mitoSINGLE/abyss/k*/*stats
+```
 
 El asterisco (`*`) significa que ahí puede haber 0 o más caracteres. En google puede encontrar más información sobre [wildcards](http://tldp.org/LDP/GNU-Linux-Tools-Summary/html/x11655.htm) y [regular expressions](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html) muy útiles en la terminal.<br/>
 
@@ -64,12 +68,13 @@ for i in $(seq 29 2 47); do mkdir -p /home/student/TP4/assemblies/S.aureus/abyss
 ```
 
 Ejecute el siguiente código en la terminal para ensamblar las lecturas resultantes del set de datos paired-end de mitocondria: 
-
-    python /home/student/software/SPAdes-3.12.0-Linux/bin/spades.py \
-    -1 /home/student/TP4/reads/MISEQ_SRR2075910_trim_1p.fastq.gz \
-    -2 /home/student/TP4/reads/MISEQ_SRR2075910_trim_2p.fastq.gz \
-    -s /home/student/TP4/reads/MISEQ_SRR2075910_trim_u.fastq.gz \
-    --only-assembler --careful -t 2 -m 4 -o /home/student/TP4/assemblies/mitoPAIRED/spades
+```
+python /home/student/software/SPAdes-3.12.0-Linux/bin/spades.py \
+-1 /home/student/TP4/reads/MISEQ_SRR2075910_trim_1p.fastq.gz \
+-2 /home/student/TP4/reads/MISEQ_SRR2075910_trim_2p.fastq.gz \
+-s /home/student/TP4/reads/MISEQ_SRR2075910_trim_u.fastq.gz \
+--only-assembler --careful -t 2 -m 4 -o /home/student/TP4/assemblies/mitoPAIRED/spades
+```
 
 \- ¿Cómo cambiaría el código para correr los set de datos restantes?
 
@@ -80,14 +85,15 @@ Para evaluar ensamblados de una forma completa e informativa, se utilizará el p
 
 En primer lugar se evaluarán los distintos ensamblados realizados con los sets de datos de mitocondria humana. Debido a que existe un genoma mitocondrial humano de referencia, la información de su secuencia y anotación se puede utilizar para obtener mejores estadísticas con QUAST.
 En primer lugar crear una carpeta llamada quast dentro de assemblies, con una subcarpeta llamada mitoSINGLE. A continuación elegir los que creemos son los dos mejores ensamblados priducidos con ABySS para el set de datos single-read y el ensamblado porducido con SPAdes, y ejecutar un código similar al siguiente:
-
-    python quast.py -o /home/student/TP4/assemblies/quast \
-    -R /home/student/TP4/ref_genome/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa.gz \
-    -g /home/student/TP4/ref_genome/HS.MT.gff.gz -t 2 -l abss39.SE,abss41.SE,spds.SE \
-    --circos --single /home/student/TP4/reads/GA2_DRR001063_redset.fastq.gz \
-    /home/student/TP4/assemblies/mitoSINGLE/abyss/k41/Hsap_mitoSE.k39-unitigs.fa \
-    /home/student/TP4/assemblies/mitoSINGLE/abyss/k41/Hsap_mitoSE.k41-unitigs.fa \
-    /home/student/TP4/assemblies/mitoSINGLE/spades/scaffolds.fasta
+```
+python quast.py -o /home/student/TP4/assemblies/quast \
+-R /home/student/TP4/ref_genome/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa.gz \
+-g /home/student/TP4/ref_genome/HS.MT.gff.gz -t 2 -l abss39.SE,abss41.SE,spds.SE \
+--circos --single /home/student/TP4/reads/GA2_DRR001063_redset.fastq.gz \
+/home/student/TP4/assemblies/mitoSINGLE/abyss/k41/Hsap_mitoSE.k39-unitigs.fa \
+/home/student/TP4/assemblies/mitoSINGLE/abyss/k41/Hsap_mitoSE.k41-unitigs.fa \
+/home/student/TP4/assemblies/mitoSINGLE/spades/scaffolds.fasta
+```
 
 Abrir el archivo report.html que se genera en la carpeta de salida con un navegador y explore los recursos que ofrece.
 \- ¿Que evaluación podría hacer de los ensamblados?
