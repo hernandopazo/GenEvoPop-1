@@ -100,8 +100,8 @@ python quast.py -o /home/student/TP4/assemblies/quast \
 ```
 
 Abrir el archivo report.html que se genera en la carpeta de salida con un navegador y explorar los recursos que ofrece.
-\- ¿Que evaluación podría hacer de los ensamblados?
 
+\- ¿Que evaluación podría hacer de los ensamblados?
 
 Repita el procedimiento para los otros sets de datos, creando las carpetas necesarias y modificando el código para ejecutar QUAST como sea necesario.
 
@@ -111,6 +111,12 @@ Repita el procedimiento para los otros sets de datos, creando las carpetas neces
 
 
 **Ejercicio 4.** Alineamiento a una referencia y visualización
+
+Para mapear las lecturas al genoma de referencia se utilizará [HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml), un alineador ampliamente utilizado que tiene la ventaja de ser ultra rápido y a su vez eficiente en relación a la cantidad de memoria que utiliza.
+
+Crear una carpeta llamada bowtie con una subcarpeta llamada index dentro del directorio TP4.
+A continuación, hay que crear un índice del genóma de referencia
+
 
 hisat2-build /home/diego/Dropbox/Projects/GenEvoPop/TP4/ref_genome/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa.gz /home/diego/Dropbox/Projects/GenEvoPop/TP4/ref_genome/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT
 
