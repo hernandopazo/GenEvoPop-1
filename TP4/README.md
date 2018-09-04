@@ -86,8 +86,9 @@ python /home/student/software/SPAdes-3.12.0-Linux/bin/spades.py \
 
 Para evaluar ensamblados de una forma completa e informativa, se utilizará el programa [QUAST](http://cab.spbu.ru/software/quast).
 
-En primer lugar se evaluarán los distintos ensamblados realizados con los sets de datos de mitocondria humana. Debido a que existe un genoma mitocondrial humano de referencia, la información de su secuencia y anotación se puede utilizar para obtener mejores estadísticas con QUAST.
-En primer lugar crear una carpeta llamada quast dentro de assemblies, con una subcarpeta llamada mitoSINGLE. A continuación elegir los que creemos son los dos mejores ensamblados priducidos con ABySS para el set de datos single-read y el ensamblado porducido con SPAdes, y ejecutar un código similar al siguiente:
+En primer lugar se evaluarán los distintos ensamblados realizados con los sets de datos de mitocondria humana. Debido a que existe un genoma mitocondrial humano de referencia, la información de su secuencia y anotación se puede utilizar para obtener mejores estadísticas.
+
+En primer lugar crear una carpeta llamada `quast` dentro de `assemblies`, con una subcarpeta llamada `mitoSINGLE`. A continuación elegir los que creemos son los dos mejores ensamblados priducidos con ABySS para el set de datos single-read y el ensamblado porducido con SPAdes, y ejecutar un código similar al siguiente:
 ```
 python quast.py -o /home/student/TP4/assemblies/quast \
 -R /home/student/TP4/ref_genome/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa.gz \
@@ -98,7 +99,7 @@ python quast.py -o /home/student/TP4/assemblies/quast \
 /home/student/TP4/assemblies/mitoSINGLE/spades/scaffolds.fasta
 ```
 
-Abrir el archivo report.html que se genera en la carpeta de salida con un navegador y explore los recursos que ofrece.
+Abrir el archivo report.html que se genera en la carpeta de salida con un navegador y explorar los recursos que ofrece.
 \- ¿Que evaluación podría hacer de los ensamblados?
 
 
