@@ -1,1 +1,1 @@
-                                                    ![](nextTime.gif)
+   ![](nextTime.gif)
