@@ -1,1 +1,1 @@
-   ![](nextTime.gif =250x250)
+   ![](nextTime.gif width="40" height="40")
