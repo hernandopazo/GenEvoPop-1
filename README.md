@@ -4,9 +4,7 @@
 
 Trabajos Prácticos desarrollados inicialmente para el curso [**Genómica Evolutiva y Poblacional**](https://www.genevopop.net/grado.html) del [departamento de Ecología, Genética y Evolución](https://www.ege.fcen.uba.ar) de la [Facultad de Ciencias Exactas y Naturales](https://exactas.uba.ar/) ([Universidad de Buenos Aires](https://www.uba.ar)).
 
-
-
-
+<br/><br/><br/>
 
 ### TP2: [Introducción a Linux](https://github.com/lunfardista/GenEvoPop/blob/master/TP2/README.md)
 
