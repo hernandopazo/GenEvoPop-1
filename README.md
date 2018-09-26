@@ -10,6 +10,6 @@ Trabajos Prácticos desarrollados inicialmente para el curso [**Genómica Evolut
 
 ### TP3: [Control y pre-procesamiento de datos de NGS](https://github.com/lunfardista/GenEvoPop/blob/master/TP3/README.md)
 
-### TP4: [Introducción al ensamblado genómico](https://github.com/lunfardista/GenEvoPop/blob/master/TP4/README.md)
+### TP4: [Introducción al ensamblado/mapeo genómico](https://github.com/lunfardista/GenEvoPop/blob/master/TP4/README.md)
 
 ### TP5: [Introducción a RNA-Seq](https://github.com/lunfardista/GenEvoPop/blob/master/TP5/README.md)
