@@ -31,7 +31,7 @@ A continuación realizaremos las siguientes acciones en el set de datos paired-e
 . Recortar los nucleótidos del comienzo y del final de las lecuras si tienen una calidad menor que cierto umbral. Se utilizará un valor umbral de calidad igual a 10 mediante los parámetros `LEADING:10` `TRAILING:10`.<br/>
 . Restringir que la calidad de las lecturas no caiga por debajo de cierto umbral medio en una ventana de longitud determinada. Se utilizara un valor umbral de calidad igual a 10 en una venta de 6 nucleótidos, mediante el parámetro `SLIDINGWINDOW:6:10`.<br/>
 . Descartar aquellas lecturas que luego del procesado tengan menos de 50 nucleótidos, utilizando el parámetro `MINLEN:50`.<br/>
-Para ello, primero crear una carpeta llamada `trimm` dentro de la carpeta `/home/student/TP3/reads/`, y luego ejecutar la siguiente línea de código:
+Para ello, primero crear una carpeta llamada `trimm` dentro de la carpeta `/home/estudiante/TP3/reads/`, y luego ejecutar la siguiente línea de código:
 ```
 trimmomatic PE -trimlog /home/estudiante/TP3/reads/trimm/MISEQ_wgs_trimming.log \
 /home/estudiante/TP3/reads/MISEQ_wgs_1.fastq.gz /home/estudiante/TP3/reads/MISEQ_wgs_2.fastq.gz \
