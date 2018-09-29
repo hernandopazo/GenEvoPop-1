@@ -24,3 +24,7 @@ trimmomatic SE \
 ILLUMINACLIP:/home/estudiante/software/Trimmomatic-0.38/adapters/TruSeq2-SE.fa:2:30:10 \
 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:20 MINLEN:50
 ```
+
+```
+zcat /home/estudiante/TP4/reads/trimm/MISEQ_SRR2075910_trim_1u.fastq.gz > /home/estudiante/TP4/reads/trimm/MISEQ_SRR2075910_trim_U.fastq; zcat /home/estudiante/TP4/reads/trimm/MISEQ_SRR2075910_trim_2u.fastq.gz >> /home/estudiante/TP4/reads/trimm/MISEQ_SRR2075910_trim_U.fastq; gzip /home/estudiante/TP4/reads/trimm/MISEQ_SRR2075910_trim_U.fastq
+```
