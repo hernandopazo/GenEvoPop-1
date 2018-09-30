@@ -8,7 +8,7 @@ sed -i '20s/^/#/' .zshrc ; sed -i '21s/^#//' .zshrc ; sed -i '31s/^/#/' .zshrc ;
 
 3) volver a abrir la terminal y ejecutar la siguiente línea de código:
 ```
-cd /home/estudiante/software; wget ftp://ftp.ccb.jhu.edu/pub/infphilo/hisat2/downloads/hisat2-2.1.0-Linux_x86_64.zip; unzip *
+cd /home/estudiante/software; wget ftp://ftp.ccb.jhu.edu/pub/infphilo/hisat2/downloads/hisat2-2.1.0-Linux_x86_64.zip; unzip hisat2-2.1.0-Linux_x86_64.zip
 ```
 
 4) ejecutar la siguiente línea de código:
