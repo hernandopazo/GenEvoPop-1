@@ -1,7 +1,7 @@
 
 1) abrir la terminal y ejecutar la siguiente linea de código:
 ```
-sed -i '32s/.*/#&/' .zshrc ; sed -i '189s/.*/#&/' .zshrc
+sed -i '31s/.*/#&/' .zshrc ; sed -i '32s/.*/#&/' .zshrc ; sed -i '189s/.*/#&/' .zshrc
 ```
 
 2) cerrar la terminal
