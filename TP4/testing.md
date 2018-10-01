@@ -126,7 +126,7 @@ Se importará el genoma y su anotación para visualizar los genes y sus localiza
 Luego se carga el archivo genreado anteriormente `GA2_DRR001063_redset.sorted.bam` desde el menú _File_ seleccionando _Load from file..._
 
 \- ¿Qué observa?
-Coloree los reads de acuerdo al strand oprimiento Click derecho sobre un read y seleccionando _**Color alignments by**_ y luego _**read strand**_
+Coloree los reads de acuerdo al strand oprimiento Click derecho sobre un read y seleccionando _**Color alignments by**_ y luego _**read strand**_.<br/>
 Consulte la guía de usuario desde el menú _**Help**_ seleccionando _**User Guide...**_
 
 
