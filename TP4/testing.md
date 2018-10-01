@@ -122,8 +122,14 @@ samtools index /home/estudiante/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.s
 ```
 
 A continuación, abra IGV ejecutando en la línea de comandos de la termial `igv &`<br/>
-Se importará el genoma y su anotación para visualizar los genes y sus localizaciones. Primero, en el menú _**Genomes**_ seleccione _**Create .genome File...**_. Completar los campos de la siguiente forma: en el campo _Unique identifier_ puede ingresar "HsapMT" o algún otro identificador corto; en el campo _Descriptive name_ puede ingresar "H. sapiens mitochondria 37.74" o alguna otra descripción; en el campo _FASTA file_ tiene que ingresar el archivo fasta que se encuentra en el directorio `/home/estudiante/TP4/alignment/index`; y finalmente en el campo _Gene File_ tien que ingresar el archivo de anotación GTF que se encuentra en el directorio `/home/estudiante/TP4/ref_genome`
-Luego se carga el archivo genreado anteriormente `GA2_DRR001063_redset.sorted.bam` desde el menú _File_ seleccionando _Load from file..._
+Para importar el genoma de referencia y junto con la información y localizaciones de sus genes, se realizaran las siguientes acciones:
+. En el menú _**Genomes**_ seleccione _**Create .genome File...**_<br/>
+. Completar los campos de la siguiente forma:<br/>
+.. en el campo _Unique identifier_ puede ingresar "HsapMT" o algún otro identificador corto<br/>
+.. en el campo _Descriptive name_ puede ingresar "H. sapiens mitochondria 37.74" o alguna otra descripción<br/>
+.. en el campo _FASTA file_ tiene que ingresar el archivo fasta que se encuentra en el directorio `/home/estudiante/TP4/alignment/index`<br/>
+.. en el campo _Gene File_ tien que ingresar el archivo de anotación GTF que se encuentra en el directorio `/home/estudiante/TP4/ref_genome`<br/>
+. Luego se carga el archivo genreado anteriormente `GA2_DRR001063_redset.sorted.bam` desde el menú _File_ seleccionando _Load from file..._<br/>
 
 \- ¿Qué observa?
 Coloree los reads de acuerdo al strand oprimiento Click derecho sobre un read y seleccionando _**Color alignments by**_ y luego _**read strand**_.<br/>
