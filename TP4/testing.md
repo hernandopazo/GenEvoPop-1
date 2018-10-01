@@ -110,8 +110,7 @@ crear directorio mitoSINGLE y mitoPAIRED dentro de alignments
 hisat2 -p 2 -x /home/estudiante/TP4/alignments/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT -U /home/estudiante/TP4/reads/GA2_DRR001063_redset.fastq.gz -S /home/estudiante/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.sam
 ```
 
--1
--2
+
 
 
 ./samtools view -b /home/diego/Dropbox/Projects/GenEvoPop/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.sam > /home/diego/Dropbox/Projects/GenEvoPop/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.bam
