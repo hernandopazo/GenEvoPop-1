@@ -133,7 +133,7 @@ Para importar el genoma de referencia y junto con la información y localizacion
 
 \- ¿Qué observa?<br/>
 
-Coloree los reads de acuerdo al strand oprimiento Click derecho sobre un read y seleccionando _**Color alignments by**_ y luego _**read strand**_.<br/>
+Coloree los reads de acuerdo al strand oprimiendo Click derecho sobre un read y seleccionando _**Color alignments by**_ y luego _**read strand**_.<br/>
 Consulte la guía de usuario desde el menú _**Help**_ seleccionando _**User Guide...**_
 
 
