@@ -29,3 +29,10 @@ sed -i '26,33s/^/#/' abyss_scripts.sh
 ```
 sed -i '40,47s/^#//' abyss_scripts.sh
 ```
+
+Guardar resultados:
+```
+cat /home/estudiante/TP4/assemblies/mitoSINGLE/abyss/k*/*stats >> abyss_mitoSINGLE.rslts
+```
+
+
