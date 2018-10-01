@@ -61,7 +61,7 @@ En primer lugar hay que crear un directorio llamado `spades` dentro de cada uno 
 
 Ejecute el siguiente código en la terminal para ensamblar las lecturas resultantes del set de datos paired-end de mitocondria: 
 ```
-spades -1 /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_1p.fastq.gz -2 /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_2p.fastq.gz -s /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_u.fastq.gz --only-assembler --careful -t 2 -m 4 -o /home/estudiante/TP4/assemblies/mitoPAIRED/spades
+python spades -1 /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_1p.fastq.gz -2 /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_2p.fastq.gz -s /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_u.fastq.gz --only-assembler --careful -t 2 -m 4 -o /home/estudiante/TP4/assemblies/mitoPAIRED/spades
 ```
 
 \- ¿Cómo cambiaría el código para correr los set de datos restantes?
@@ -75,12 +75,12 @@ En primer lugar se evaluarán los distintos ensamblados realizados con los sets 
 
 En primer lugar crear una carpeta llamada `quast` dentro de `/assemblies`, con una subcarpeta llamada `mitoSINGLE`. A continuación elegir los que creemos son los dos mejores ensamblados priducidos con ABySS para el set de datos single-read y el ensamblado porducido con SPAdes, y ejecutar un código similar al siguiente:
 ```
-python quast.py -o /home/estudiante/TP4/assemblies/quast -R /home/estudiante/TP4/ref_genome/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa.gz -g /home/estudiante/TP4/ref_genome/HS.MT.gff.gz -t 2 -l abss39.SE,abss41.SE,spds.SE --circos --single /home/estudiante/TP4/reads/GA2_DRR001063_redset.fastq.gz /home/estudiante/TP4/assemblies/mitoSINGLE/abyss/k39/Hsap_mitoSE.k39-unitigs.fa /home/estudiante/TP4/assemblies/mitoSINGLE/abyss/k41/Hsap_mitoSE.k41-unitigs.fa /home/estudiante/TP4/assemblies/mitoSINGLE/spades/scaffolds.fasta
+python quast.py -o /home/estudiante/TP4/assemblies/quast/mitoSINGLE -R /home/estudiante/TP4/ref_genome/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa.gz -g /home/estudiante/TP4/ref_genome/HS.MT.gff.gz -t 2 -l abss39.SE,abss41.SE,spds.SE --circos --single /home/estudiante/TP4/reads/GA2_DRR001063_redset.fastq.gz /home/estudiante/TP4/assemblies/mitoSINGLE/abyss/k39/Hsap_mitoSE.k39-unitigs.fa /home/estudiante/TP4/assemblies/mitoSINGLE/abyss/k41/Hsap_mitoSE.k41-unitigs.fa /home/estudiante/TP4/assemblies/mitoSINGLE/spades/scaffolds.fasta
 ```
 
 Abrir el archivo report.html que se genera en la carpeta de salida con un navegador y explorar todos los recursos que ofrece.
 
-\- ¿Que evaluación podría hacer de los ensamblados?
+\- ¿Que evaluación podría hacer de los ensamblados? ¿Cuál es el mejor?
 
 Repita el procedimiento para los otros sets de datos, creando las carpetas necesarias y modificando el código para ejecutar QUAST como sea necesario.<br/><br/>
 
@@ -89,16 +89,16 @@ Repita el procedimiento para los otros sets de datos, creando las carpetas neces
 
 Para mapear las lecturas al genoma de referencia se utilizará [HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml), un alineador ampliamente utilizado que tiene la ventaja de ser ultra rápido y a su vez eficiente en relación a la cantidad de memoria que utiliza.
 
-Crear una carpeta llamada `alignments` con una subcarpeta llamada `index` dentro del directorio `TP4`.
+Crear un directorio llamado `alignments` con un subdirectorio llamado `index_hs2` dentro del directorio `/TP4`.
 A continuación, hay que crear un índice del genóma de referencia
 ```
-gunzip -c /home/estudiante/TP4/ref_genome/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa.gz > /home/estudiante/TP4/alignments/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa
+gunzip -c /home/estudiante/TP4/ref_genome/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa.gz > /home/estudiante/TP4/alignments/index_hs2/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa
 ```
 ```
-hisat2-build /home/estudiante/TP4/alignments/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa /home/estudiante/TP4/alignments/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT
+hisat2-build /home/estudiante/TP4/alignments/index_hs2/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa /home/estudiante/TP4/alignments/index_hs2/Homo_sapiens.GRCh37.74.dna.chromosome.MT
 ```
 
-crear directorio mitoSINGLE y mitoPAIRED dentro de alignments
+A continuación, crear un directorio llamado `mitoSINGLE` y otro llamado `mitoPAIRED` dentro del directorio `/alignments`
 
 ```
 hisat2 -p 2 -x /home/estudiante/TP4/alignments/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT -U /home/estudiante/TP4/reads/GA2_DRR001063_redset.fastq.gz -S /home/estudiante/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.sam
