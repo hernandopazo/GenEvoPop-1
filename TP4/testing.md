@@ -44,7 +44,7 @@ ABySS facilita una rápida y básica inspección de los resultados obtenidos a p
 cat /home/estudiante/TP4/assemblies/mitoSINGLE/abyss/k*/*stats
 ```
 
-El asterisco (`*`) significa que ahí puede haber 0 o más caracteres. En google puede encontrar más información sobre [wildcards](http://tldp.org/LDP/GNU-Linux-Tools-Summary/html/x11655.htm) y [regular expressions](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html), muy útiles en la terminal.<br/>
+El asterisco (`*`) significa que ahí puede haber 0 o más caracteres. En _Google_ puede encontrar más información sobre [wildcards](http://tldp.org/LDP/GNU-Linux-Tools-Summary/html/x11655.htm) y [regular expressions](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html), muy útiles en la terminal.<br/>
 
 \- ¿Cómo guardaría esos resultados en un archivo llamado `abyss_mitoSINGLE.rslts`? Realice lo mismo para los otros grupos de ensamblados.
 
