@@ -16,3 +16,8 @@ cd ; sed -i '20s/^/#/' .zshrc ; sed -i '21s/^#//' .zshrc ; sed -i '31s/^/#/' .zs
 ```
 sudo apt install openmpi-bin abyss
 ```
+
+5. HAGAN ESTO!
+```
+echo 'export PATH="/home/estudiante/software/hisat-0.1.6-beta:$PATH"' >> .zshrc
+```
