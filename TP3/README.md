@@ -8,6 +8,7 @@ Explore los archivos con extensión _fastq_ de la carpeta.<br/>
 Como lo sugieren en su nombre, estos archivos corresponden a secuencias producidas con tecnología Illumina, PacBio y Oxford Nanopore de distintos orígenes.<br/>
 \- ¿Qué diferencias encuentra entre las lecturas producidas por las distintas tecnologías?
 
+
 **Ejercicio 2.** Control de calidad de secuencias.
 
 [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc) es un programa que permite visualizar estadísticas relacionadas a la calidad de la secuenciación en instrumentos de nueva generación, para determinar posibles desviaciones en los datos esperados.
