@@ -122,7 +122,7 @@ samtools index /home/estudiante/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.s
 ```
 
 A continuación, abra IGV ejecutando en la línea de comandos de la termial `igv &`<br/>
-Para importar el genoma de referencia y junto con la información y localizaciones de sus genes, se realizaran las siguientes acciones:
+Para importar el genoma de referencia y junto con la información y localizaciones de sus genes, se realizaran las siguientes acciones:<br/>
 . En el menú _**Genomes**_ seleccione _**Create .genome File...**_<br/>
 . Completar los campos de la siguiente forma:<br/>
 .. en el campo _Unique identifier_ puede ingresar "HsapMT" o algún otro identificador corto<br/>
