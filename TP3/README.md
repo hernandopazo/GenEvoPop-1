@@ -7,7 +7,7 @@ Utilizando comandos como `head` `tail` `less` explore los archivos _ejemplo.fast
 Explore los archivos con extensión _fastq_ de la carpeta.<br/>
 Como lo sugieren en su nombre, estos archivos corresponden a secuencias producidas con tecnología Illumina, PacBio y Oxford Nanopore de distintos orígenes.<br/>
 \- ¿Qué diferencias encuentra entre las lecturas producidas por las distintas tecnologías?
-
+<br/>
 
 **Ejercicio 2.** Control de calidad de secuencias.
 
