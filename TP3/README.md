@@ -2,7 +2,7 @@
 **Ejercicio 1.** Exploración de archivos _fasta_ y _fastq_<br/><br/>
 Una vez iniciada la máquina virtual, acceda a una terminal y sitúese en `/home/estudiante/TP3`.<br/>
 Los archivos que contienen las lecturas se encuentran en `/home/estudiante/TP3/reads`<br/>
-Utilizando comandos como `head` `tail` `less` explore los archivos _ejemplo.fasta_ y _ejemplo.fastq_ (tenga en cuenta que los archivos se encuentran comprimidos).<br/>
+Utilizando comandos como `head` `tail` `cat` `more` `less` explore los archivos _ejemplo.fasta_ y _ejemplo.fastq_ (tenga en cuenta que los archivos se encuentran comprimidos).<br/>
 \- ¿Cuáles son las diferencias entre estos tipos de archivos?<br/><br/>
 Explore los archivos con extensión _fastq_ de la carpeta.<br/>
 Como lo sugieren en su nombre, estos archivos corresponden a secuencias producidas con tecnología Illumina, PacBio y Oxford Nanopore de distintos orígenes.<br/>
