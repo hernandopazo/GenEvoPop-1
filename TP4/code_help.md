@@ -12,3 +12,17 @@ Alineamiento de las lecturas paired-end:
 ```
 hisat2 -p 2 -x /home/estudiante/TP4/alignments/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT -1 /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_1p.fastq.gz -2 /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_2p.fastq.gz -S /home/estudiante/TP4/alignments/mitoPAIRED/MISEQ_SRR2075910_trim.sam
 ```
+
+Comentar/Descomentar secciones del script:
+```
+sed -i '12,19s/^/#/' abyss_scripts.sh
+```
+```
+sed -i '26,33s/^#//' abyss_scripts.sh
+```
+```
+sed -i '26,33s/^/#/' abyss_scripts.sh
+```
+```
+sed -i '40,47s/^#//' abyss_scripts.sh
+```
