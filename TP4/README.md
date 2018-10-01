@@ -96,12 +96,12 @@ gunzip -c /home/estudiante/TP4/ref_genome/Homo_sapiens.GRCh37.74.dna.chromosome.
 ```
 A continuación, hay que crear un índice del genóma de referencia mediante la siguiente línea de código:
 ```
-hisat2-build /home/estudiante/TP4/alignments/index_hs2/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa /home/estudiante/TP4/alignments/index_hs2/Homo_sapiens.GRCh37.74.dna.chromosome.MT
+hisat-build /home/estudiante/TP4/alignments/index_hs2/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa /home/estudiante/TP4/alignments/index_hs2/Homo_sapiens.GRCh37.74.dna.chromosome.MT
 ```
 Luego, crear un directorio llamado `mitoSINGLE` y otro llamado `mitoPAIRED` dentro del directorio `/alignments`<br/>
 Finalmente, se alinean las lecturas al genoma de referencia mediante la siguiente línea de código:
 ```
-hisat2 -p 2 -x /home/estudiante/TP4/alignments/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT -U /home/estudiante/TP4/reads/GA2_DRR001063_redset.fastq.gz -S /home/estudiante/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.sam
+hisat -p 2 -x /home/estudiante/TP4/alignments/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT -U /home/estudiante/TP4/reads/GA2_DRR001063_redset.fastq.gz -S /home/estudiante/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.sam
 ```
 
 \- ¿Cuántas lecturas alinearon a la referencia?<br/><br/>
