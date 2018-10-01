@@ -106,7 +106,7 @@ hisat2 -p 2 -x /home/estudiante/TP4/alignments/index/Homo_sapiens.GRCh37.74.dna.
 
 \- ¿Cuántas lecturas alinearon a la referencia?<br/><br/>
 
-Para visualizar el mapeo de las lecturas contra el genoma de referencia vamos a utilizar el programa [IGV](http://software.broadinstitute.org/software/igv), pero antes es necesario convertir el alineamiento de formato _SAM _ (Sequence Alignment/Map) a formato _BAM_ (Binary Alignment/Map). Para eso utilizaremos el programa [SAMtools](www.htslib.org), que proporciona un set de herramientas para procesar esa clase de archivos.
+Para visualizar el mapeo de las lecturas contra el genoma de referencia vamos a utilizar el programa [IGV](http://software.broadinstitute.org/software/igv), pero antes es necesario convertir el alineamiento de formato _SAM _ (Sequence Alignment/Map) a formato _BAM_ (Binary Alignment/Map). Para eso utilizaremos el programa [SAMtools](http://www.htslib.org), que proporciona un set de herramientas para procesar esa clase de archivos.
 
 Primero se convierte el alineamiento en formato SAM a formato BAM con la siguiente línea de código:
 ```
