@@ -5,9 +5,9 @@
 
 En primer lugar se utilizará [ABySS](http://www.bcgsc.ca/platform/bioinfo/software/abyss/), un ensamblador que resulta adecuado para una primera ronda de ensamblajes ya que su ejecución es sencilla y no requiere grandes recursos computacionales. A su vez, otras características que posee este programa se encuentra su flexibilidad en cuanto a los tamaños genómicos que soporta, y que requiere que se declare un valor de k-mer para la construcción del grafo.
 
-Una vez iniciada la máquina virtual, acceda a una terminal y sitúese en `/home/estudiante/TP4`.<br/>
-En la carpeta `/home/estudiante/TP4/reads/` hay lecturas provenientes de secuenciaciones de ADN mitocondrial humano producidas con tecnología Illumina [single-read](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=DRR001063) y [paired-end](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR2075910), pero de experimentos distintos. También hay lecturas Illumina de una secuenciación simulada de _Staphylococcus aureus_.<br/>
-\- ¿Hace falta realizar algún procesado sobre las lecturas relacionado con la calidad de secuenciación? ¿En qué set de lecturas? Si fuera el caso, procesar el set que haga falta con Trimmomatic de la misma forma que lo hecho anteriormente en el [TP3](https://github.com/lunfardista/GenEvoPop/tree/master/TP3), pero además combinar los dos archivos desapareados resultantes (si los hubiera) en uno solo.<br/><br/>
+Una vez iniciada la máquina virtual, acceda a una terminal y sitúese en `/home/estudiante/TP4`<br/>
+En la carpeta `/home/estudiante/TP4/reads` hay lecturas provenientes de secuenciaciones de ADN mitocondrial humano producidas con tecnología Illumina [single-read](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=DRR001063) y [paired-end](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR2075910), pero de experimentos distintos. También hay lecturas Illumina de una secuenciación simulada de _Staphylococcus aureus_.<br/>
+\- ¿Hace falta realizar algún procesado sobre las lecturas relacionado con la calidad de secuenciación? ¿En qué set de lecturas? Si fuera el caso, procesar el set que haga falta con Trimmomatic de la misma forma que lo hecho anteriormente en el [TP3](https://github.com/lunfardista/GenEvoPop/tree/master/TP3), pero además combinar los dos archivos desapareados resultantes (si los hubiera) en uno solo (¿cómo haría eso?).<br/>
 
 Debido a que ABySS requiere que se declare un valor de k-mer, una estrategia que se suele utilizar es realizar distintos ensamblados modificando ese parámetro para luego seleccionar el mejor dentro de una métrica en particular. Para tal fin, se construyó el script `abyss_scripts.sh`. Explore el archivo e intente identificar las distintas secciones del código.<br/>
 \- ¿Qué sucede si ejecutamos la siguiente líneas de código?:
@@ -17,7 +17,7 @@ seq 29 2 47
 
 Ejecutando el siguiente código puede tener una idea más clara sobre el funcionamiento del script:
 ```
-for i in $(seq 29 2 47); do echo abyss-pe -C /home/estudiante/TP4/assemblies/mitoPAIRED/abyss/k"$i" k="$i" name=Saur.k"$i" in='/home/estudiante/TP4/reads/sim_Staur_1.fq.gz /home/estudiante/TP4/reads/sim_Staur_2.fq.gz'; done
+for i in $(seq 29 2 47); do echo abyss-pe -C /home/estudiante/TP4/assemblies/S.aureus/abyss/k"$i" k="$i" name=Saur.k"$i" in='/home/estudiante/TP4/reads/sim_Staur_1.fq.gz /home/estudiante/TP4/reads/sim_Staur_2.fq.gz'; done
 ```
 \- ¿Cuántos ensamblados generará el script para cada set de datos?
 
@@ -32,7 +32,7 @@ for i in $(seq 29 2 47); do mkdir -p /home/estudiante/TP4/assemblies/mitoSINGLE/
 for i in $(seq 29 2 47); do mkdir -p /home/estudiante/TP4/assemblies/S.aureus/abyss/k"$i"; done
 ```
 
-Para correr el script, ejecute en la terminal la siguiente línea de código:
+Para correr el script, ejecute en la terminal (estando ubicado en el directorio `TP4`) la siguiente línea de código:
 ```
 ./abyss_scripts.sh
 ```
