@@ -106,32 +106,28 @@ hisat2 -p 2 -x /home/estudiante/TP4/alignments/index/Homo_sapiens.GRCh37.74.dna.
 
 \- ¿Cuántas lecturas alinearon a la referencia?<br/><br/>
 
-Para visualizar el mapeo de las lecturas contra el genoma de referencia vamos a utilizar el programa [IGV](http://software.broadinstitute.org/software/igv), pero antes es necesario convertir el alineamiento de formato _SAM _(Sequence Alignment/Map) a formato _BAM_ (Binary Alignment/Map). Para eso utilizaremos el programa [SAMtools](www.htslib.org), que proporciona un set de herramientas para procesar esa clase de archivos.
+Para visualizar el mapeo de las lecturas contra el genoma de referencia vamos a utilizar el programa [IGV](http://software.broadinstitute.org/software/igv), pero antes es necesario convertir el alineamiento de formato _SAM _ (Sequence Alignment/Map) a formato _BAM_ (Binary Alignment/Map). Para eso utilizaremos el programa [SAMtools](www.htslib.org), que proporciona un set de herramientas para procesar esa clase de archivos.
 
-
+Primero se convierte el alineamiento en formato SAM a formato BAM con la siguiente línea de código:
 ```
 samtools view -b /home/estudiante/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.sam > /home/estudiante/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.bam
 ```
 
+Luego, el archivo BAM debe ser ordenado e indexado mediante las siguientes líneas de código:
 ```
 samtools sort -o /home/estudiante/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.sorted.bam /home/estudiante/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.bam
 ```
-
 ```
 samtools index /home/estudiante/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.sorted.bam
 ```
 
-
-Se importará el genoma y su anotación para visualizar los genes y sus localizaciones.
-Primero, en el menú _**Genomes**_ seleccione _**Create .genome File...**_
-
-Completar los campos de la siguiente forma: en el campo _Unique identifier_ puede ingresar "HsapMT" o algún otro identificador corto; en el campo _Descriptive name_ puede ingresar "H. sapiens mitochondria 37.74" o alguna otra descripción; en el campo _FASTA file_ tiene que ingresar el archivo fasta que se encuentra en el directorio `/home/estudiante/TP4/alignment/index`; y finalmente en el campo _Gene File_ tien que ingresar el archivo de anotación GTF que se encuentra en el directorio `/home/estudiante/TP4/ref_genome`
+A continuación, abra IGV ejecutando en la línea de comandos de la termial `igv &`<br/>
+Se importará el genoma y su anotación para visualizar los genes y sus localizaciones. Primero, en el menú _**Genomes**_ seleccione _**Create .genome File...**_. Completar los campos de la siguiente forma: en el campo _Unique identifier_ puede ingresar "HsapMT" o algún otro identificador corto; en el campo _Descriptive name_ puede ingresar "H. sapiens mitochondria 37.74" o alguna otra descripción; en el campo _FASTA file_ tiene que ingresar el archivo fasta que se encuentra en el directorio `/home/estudiante/TP4/alignment/index`; y finalmente en el campo _Gene File_ tien que ingresar el archivo de anotación GTF que se encuentra en el directorio `/home/estudiante/TP4/ref_genome`
 Luego se carga el archivo genreado anteriormente `GA2_DRR001063_redset.sorted.bam` desde el menú _File_ seleccionando _Load from file..._
 
-¿Qué observa?
-Coloree los reads de acuerdo al strand. Click derecho sobre un read “Color alignments by -> read
-strand”
-Consulte la guía de usuario desde el menú _Help_ seleccionando _User Guide..._
+\- ¿Qué observa?
+Coloree los reads de acuerdo al strand oprimiento Click derecho sobre un read y seleccionando _**Color alignments by**_ y luego _**read strand**_
+Consulte la guía de usuario desde el menú _**Help**_ seleccionando _**User Guide...**_
 
 
 
