@@ -90,10 +90,11 @@ Repita el procedimiento para los otros sets de datos, creando las carpetas neces
 Para mapear las lecturas al genoma de referencia se utilizará [HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml), un alineador ampliamente utilizado que tiene la ventaja de ser ultra rápido y a su vez eficiente en relación a la cantidad de memoria que utiliza.
 
 Crear un directorio llamado `alignments` con un subdirectorio llamado `index_hs2` dentro del directorio `/TP4`<br/>
-A continuación, hay que crear un índice del genóma de referencia mediante la siguiente línea de código:
+Ejecute la siguiente línea de código para descomprimir el genoma de referencia y ubicarlo en otro directorio:
 ```
 gunzip -c /home/estudiante/TP4/ref_genome/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa.gz > /home/estudiante/TP4/alignments/index_hs2/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa
 ```
+A continuación, hay que crear un índice del genóma de referencia mediante la siguiente línea de código:
 ```
 hisat2-build /home/estudiante/TP4/alignments/index_hs2/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa /home/estudiante/TP4/alignments/index_hs2/Homo_sapiens.GRCh37.74.dna.chromosome.MT
 ```
