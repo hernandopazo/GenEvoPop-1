@@ -1,4 +1,4 @@
-### [Trabajo Práctico N° 4. Introducción al Ensamblado Genómico](https://docs.google.com/presentation/)<br/><br/>
+### [Trabajo Práctico N° 4. Introducción al ensamblado/mapeo genómico](https://docs.google.com/presentation/)<br/><br/>
 
 
 **Ejercicio 1.** Ensamblado _de novo_ con ABySS
@@ -106,7 +106,9 @@ hisat2-build /home/estudiante/TP4/alignments/index/Homo_sapiens.GRCh37.74.dna.ch
 
 crear directorio mitoSINGLE y mitoPAIRED dentro de alignments
 
-hisat2 -p  2 -x /home/diego/Dropbox/Projects/GenEvoPop/TP4/ref_genome/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT -U /home/diego/Dropbox/Projects/GenEvoPop/TP4/reads/GA2_DRR001063_redset.fastq.gz -S /home/diego/Dropbox/Projects/GenEvoPop/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.sam
+```
+hisat2 -p 2 -x /home/estudiante/TP4/alignments/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT -U /home/estudiante/TP4/reads/GA2_DRR001063_redset.fastq.gz -S /home/estudiante/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.sam
+```
 
 -1
 -2
