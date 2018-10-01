@@ -57,15 +57,15 @@ El asterisco (`*`) significa que ahí puede haber 0 o más caracteres. En _Googl
 
 A continuación vamos a repetir los ensamblados pero con otro programa: [SPAdes](http://cab.spbu.ru/software/spades/). Este ensamblador funciona muy bien con genomas chicos y no necesita que se declare un valor de kmer ya que usa una estrategia multi-kmer predetermianda.
 
-En primer lugar hay que crear un directorio llamado `spades` dentro de cada uno de los tres subdirectorios que se encuentran en `assemblies`
+En primer lugar hay que crear un directorio llamado `spades` dentro de cada uno de los tres subdirectorios que se encuentran en `/assemblies`
 
 Ejecute el siguiente código en la terminal para ensamblar las lecturas resultantes del set de datos paired-end de mitocondria: 
 ```
-python /home/estudiante/software/SPAdes-3.12.0-Linux/bin/spades.py -1 /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_1p.fastq.gz -2 /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_2p.fastq.gz -s /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_u.fastq.gz --only-assembler --careful -t 2 -m 4 -o /home/estudiante/TP4/assemblies/mitoPAIRED/spades
+spades -1 /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_1p.fastq.gz -2 /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_2p.fastq.gz -s /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_u.fastq.gz --only-assembler --careful -t 2 -m 4 -o /home/estudiante/TP4/assemblies/mitoPAIRED/spades
 ```
 
-\- ¿Cómo cambiaría el código para correr los set de datos restantes?<br/><br/>
-
+\- ¿Cómo cambiaría el código para correr los set de datos restantes?
+<br/><br/>
 
 **Ejercicio 3.** Evaluación del ensamblado
 
