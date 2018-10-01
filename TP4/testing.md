@@ -61,11 +61,7 @@ En primer lugar hay que crear un directorio llamado `spades` dentro de cada uno 
 
 Ejecute el siguiente código en la terminal para ensamblar las lecturas resultantes del set de datos paired-end de mitocondria: 
 ```
-python /home/estudiante/software/SPAdes-3.12.0-Linux/bin/spades.py \
--1 /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_1p.fastq.gz \
--2 /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_2p.fastq.gz \
--s /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_u.fastq.gz \
---only-assembler --careful -t 2 -m 4 -o /home/estudiante/TP4/assemblies/mitoPAIRED/spades
+python /home/estudiante/software/SPAdes-3.12.0-Linux/bin/spades.py -1 /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_1p.fastq.gz -2 /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_2p.fastq.gz -s /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_u.fastq.gz --only-assembler --careful -t 2 -m 4 -o /home/estudiante/TP4/assemblies/mitoPAIRED/spades
 ```
 
 \- ¿Cómo cambiaría el código para correr los set de datos restantes?<br/><br/>
