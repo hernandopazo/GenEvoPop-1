@@ -89,17 +89,16 @@ Repita el procedimiento para los otros sets de datos, creando las carpetas neces
 
 Para mapear las lecturas al genoma de referencia se utilizará [HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml), un alineador ampliamente utilizado que tiene la ventaja de ser ultra rápido y a su vez eficiente en relación a la cantidad de memoria que utiliza.
 
-Crear un directorio llamado `alignments` con un subdirectorio llamado `index_hs2` dentro del directorio `/TP4`.
-A continuación, hay que crear un índice del genóma de referencia
+Crear un directorio llamado `alignments` con un subdirectorio llamado `index_hs2` dentro del directorio `/TP4`<br/>
+A continuación, hay que crear un índice del genóma de referencia mediante la siguiente línea de código:
 ```
 gunzip -c /home/estudiante/TP4/ref_genome/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa.gz > /home/estudiante/TP4/alignments/index_hs2/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa
 ```
 ```
 hisat2-build /home/estudiante/TP4/alignments/index_hs2/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa /home/estudiante/TP4/alignments/index_hs2/Homo_sapiens.GRCh37.74.dna.chromosome.MT
 ```
-
-A continuación, crear un directorio llamado `mitoSINGLE` y otro llamado `mitoPAIRED` dentro del directorio `/alignments`
-
+Luego, crear un directorio llamado `mitoSINGLE` y otro llamado `mitoPAIRED` dentro del directorio `/alignments`<br/>
+Finalmente, se alinean las lecturas al genoma de referencia mediante la siguiente línea de código:
 ```
 hisat2 -p 2 -x /home/estudiante/TP4/alignments/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT -U /home/estudiante/TP4/reads/GA2_DRR001063_redset.fastq.gz -S /home/estudiante/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.sam
 ```
