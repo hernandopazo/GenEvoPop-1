@@ -21,7 +21,7 @@ Desde el programa ir a _File -> Open_ y cargar el archivo _HISEQ4K\_wgs\_1.fastq
 \- ¿Qué análisis dan buen y mal resultado?<br/>
 \- ¿Qué acciones se podrían realizar para mejorar la calidad?
 
-Explorar y discutir las distintas opciones que ofrece el programa, y repetir para el conjunto de archivos con extensión _.fastq_. Note que desde el programa se puede acceder a una ayuda sobre esto yendo a _Help -> Contents... -> Analysis Modules_.
+Explorar y discutir las distintas opciones que ofrece el programa, y repetir para el conjunto de archivos con extensión _.fastq_. Note que desde el programa se puede acceder a una ayuda sobre esto yendo al menú _**Help**_ y seleccionando _**Contents...**_ y luego _**Analysis Modules**_.
 
 \- ¿Qué puede decir sobre las distintas tecnologías y sets de datos?
 <br/><br/>
@@ -48,4 +48,4 @@ A partir de la información que se encuentra en el manual del programa:<br/>
 \- ¿Podría usar los parámetros `HEADCROP` y `CROP`?<br/>
 \- ¿Qué cambio en el código debería introducir si el set de datos no fuera pareado?
 
-Intentar mejorar las otras lecturas de Illumina disponibles.
+\- Intentar mejorar las otras lecturas de Illumina disponibles.
