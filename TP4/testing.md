@@ -131,7 +131,8 @@ Para importar el genoma de referencia y junto con la información y localizacion
 .. en el campo _Gene File_ tien que ingresar el archivo de anotación GTF que se encuentra en el directorio `/home/estudiante/TP4/ref_genome`<br/>
 . Luego se carga el archivo genreado anteriormente `GA2_DRR001063_redset.sorted.bam` desde el menú _File_ seleccionando _Load from file..._<br/>
 
-\- ¿Qué observa?
+\- ¿Qué observa?<br/>
+
 Coloree los reads de acuerdo al strand oprimiento Click derecho sobre un read y seleccionando _**Color alignments by**_ y luego _**read strand**_.<br/>
 Consulte la guía de usuario desde el menú _**Help**_ seleccionando _**User Guide...**_
 
