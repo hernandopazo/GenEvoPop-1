@@ -16,3 +16,7 @@ LEADING:20 TRAILING:20 SLIDINGWINDOW:5:20 MINLEN:50
 ```
 zcat /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_1u.fastq.gz > /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_u.fastq; zcat /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_2u.fastq.gz >> /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_u.fastq; gzip /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_u.fastq
 ```
+
+```
+hisat2 -p 2 -x /home/estudiante/TP4/alignments/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT -1 /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_1p.fastq.gz -2 /home/estudiante/TP4/reads/MISEQ_SRR2075910_trim_2p.fastq.gz -S /home/estudiante/TP4/alignments/mitoPAIRED/MISEQ_SRR2075910_trim.sam
+```
