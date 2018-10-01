@@ -7,7 +7,7 @@ Utilizando comandos como `head` `tail` `less` explore los archivos _ejemplo.fast
 Explore los archivos con extensión _fastq_ de la carpeta.<br/>
 Como lo sugieren en su nombre, estos archivos corresponden a secuencias producidas con tecnología Illumina, PacBio y Oxford Nanopore de distintos orígenes.<br/>
 \- ¿Qué diferencias encuentra entre las lecturas producidas por las distintas tecnologías?
-<br/>
+<br/><br/>
 
 **Ejercicio 2.** Control de calidad de secuencias.
 
@@ -24,6 +24,7 @@ Desde el programa ir a _File -> Open_ y cargar el archivo _HISEQ4K\_wgs\_1.fastq
 Explorar y discutir las distintas opciones que ofrece el programa, y repetir para el conjunto de archivos con extensión _.fastq_. Note que desde el programa se puede acceder a una ayuda sobre esto yendo a _Help -> Contents... -> Analysis Modules_.
 
 \- ¿Qué puede decir sobre las distintas tecnologías y sets de datos?
+<br/><br/>
 
 **Ejercicio 3.** Procesamiento de lecturas.<br/><br/>
 Dependiendo de lo observado en el análisis de calidad inicial, las secuencias pueden ser filtradas por calidad, longitud, y recortadas de distintas formas para mejorar su calidad global. También pueden eliminarse adaptarores incorporados durante el proceso de preparación de las librerías que hayan resultado secuenciados.<br/>
@@ -35,14 +36,7 @@ A continuación realizaremos las siguientes acciones en el set de datos paired-e
 . Descartar aquellas lecturas que luego del procesado tengan menos de 50 nucleótidos, utilizando el parámetro `MINLEN:50`.<br/>
 Para ello, primero crear una carpeta llamada `trimm` dentro de la carpeta `/home/estudiante/TP3/reads/`, y luego ejecutar la siguiente línea de código:
 ```
-trimmomatic PE -trimlog /home/estudiante/TP3/reads/trimm/MISEQ_wgs_trimming.log \
-/home/estudiante/TP3/reads/MISEQ_wgs_1.fastq.gz /home/estudiante/TP3/reads/MISEQ_wgs_2.fastq.gz \
-/home/estudiante/TP3/reads/trimm/MISEQ_wgs_trim_1p.fastq.gz \
-/home/estudiante/TP3/reads/trimm/MISEQ_wgs_trim_1u.fastq.gz \
-/home/estudiante/TP3/reads/trimm/MISEQ_wgs_trim_2p.fastq.gz \
-/home/estudiante/TP3/reads/trimm/MISEQ_wgs_trim_2u.fastq.gz \
-ILLUMINACLIP:/home/estudiante/software/Trimmomatic-0.38/adapters/TruSeq3-PE.fa:2:30:10 \
-LEADING:10 TRAILING:10 SLIDINGWINDOW:6:10 MINLEN:50
+trimmomatic PE -trimlog /home/estudiante/TP3/reads/trimm/MISEQ_wgs_trimming.log /home/estudiante/TP3/reads/MISEQ_wgs_1.fastq.gz /home/estudiante/TP3/reads/MISEQ_wgs_2.fastq.gz /home/estudiante/TP3/reads/trimm/MISEQ_wgs_trim_1p.fastq.gz /home/estudiante/TP3/reads/trimm/MISEQ_wgs_trim_1u.fastq.gz /home/estudiante/TP3/reads/trimm/MISEQ_wgs_trim_2p.fastq.gz /home/estudiante/TP3/reads/trimm/MISEQ_wgs_trim_2u.fastq.gz ILLUMINACLIP:/home/estudiante/software/Trimmomatic-0.38/adapters/TruSeq3-PE.fa:2:30:10 LEADING:10 TRAILING:10 SLIDINGWINDOW:6:10 MINLEN:50
 ```
 
 Explorar el registro generado (archivo _.log_). Visualizar en FastQC los archivos generados.<br/>
