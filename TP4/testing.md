@@ -3,7 +3,7 @@
 
 **Ejercicio 1.** Ensamblado _de novo_ con ABySS
 
-En primer lugar se utilizará [ABySS](http://www.bcgsc.ca/platform/bioinfo/software/abyss/), un ensamblador que resulta adecuado para una primera ronda de ensamblajes ya que su ejecución es sencilla y no requiere grandes recursos computacionales. A su vez, otras características de este programa es su flexibilidad en cuanto a los tamaños genómicos que soporta, y que requiere que se declare un valor de k-mer para la construcción del grafo.
+En primer lugar se utilizará [ABySS](http://www.bcgsc.ca/platform/bioinfo/software/abyss/), un ensamblador que resulta adecuado para una primera ronda de ensamblajes ya que su ejecución es sencilla y no requiere grandes recursos computacionales. A su vez, otras características que posee este programa se encuentra su flexibilidad en cuanto a los tamaños genómicos que soporta, y que requiere que se declare un valor de k-mer para la construcción del grafo.
 
 Una vez iniciada la máquina virtual, acceda a una terminal y sitúese en `/home/estudiante/TP4`.<br/>
 En la carpeta `/home/estudiante/TP4/reads/` hay lecturas provenientes de secuenciaciones de ADN mitocondrial humano producidas con tecnología Illumina [single-read](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=DRR001063) y [paired-end](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR2075910), pero de experimentos distintos. También hay lecturas Illumina de una secuenciación simulada de _Staphylococcus aureus_.<br/>
