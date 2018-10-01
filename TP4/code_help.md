@@ -15,6 +15,9 @@ hisat2 -p 2 -x /home/estudiante/TP4/alignments/index/Homo_sapiens.GRCh37.74.dna.
 
 Comentar/Descomentar secciones del script:
 ```
+cat -n abyss_scripts.sh
+```
+```
 sed -i '12,19s/^/#/' abyss_scripts.sh
 ```
 ```
