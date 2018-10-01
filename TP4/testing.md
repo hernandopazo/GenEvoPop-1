@@ -110,7 +110,7 @@ crear directorio mitoSINGLE y mitoPAIRED dentro de alignments
 hisat2 -p 2 -x /home/estudiante/TP4/alignments/index/Homo_sapiens.GRCh37.74.dna.chromosome.MT -U /home/estudiante/TP4/reads/GA2_DRR001063_redset.fastq.gz -S /home/estudiante/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.sam
 ```
 
-¿qué indica la salida?
+\- ¿Cuántas lecturas alinearon a la referencia?
 
 
 ```
@@ -126,7 +126,16 @@ samtools index /home/estudiante/TP4/alignments/mitoSINGLE/GA2_DRR001063_redset.s
 ```
 
 
+Se importará el genoma y su anotación para visualizar los genes y sus localizaciones.
+Primero, en el menú _Genomes_ seleccione _Create .genome File..._
 
+Completar los campos de la siguiente forma: en el campo _Unique identifier_ puede ingresar "HsapMT" o algún otro identificador corto; en el campo _Descriptive name_ puede ingresar "H. sapiens mitochondria 37.74" o alguna otra descripción; en el campo _FASTA file_ tiene que ingresar el archivo fasta que se encuentra en el directorio `/home/estudiante/TP4/alignment/index`; y finalmente en el campo _Gene File_ tien que ingresar el archivo de anotación GTF que se encuentra en el directorio `/home/estudiante/TP4/ref_genome`
+Luego se carga el archivo genreado anteriormente `GA2_DRR001063_redset.sorted.bam` desde el menú _File_ seleccionando _Load from file..._
+
+¿Qué observa?
+Coloree los reads de acuerdo al strand. Click derecho sobre un read “Color alignments by -> read
+strand”
+Consulte la guía de usuario desde el menú _Help_ seleccionando _User Guide..._
 
 
 
