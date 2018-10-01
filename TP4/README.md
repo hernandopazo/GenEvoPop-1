@@ -75,7 +75,7 @@ En primer lugar se evaluarán los distintos ensamblados realizados con los sets 
 
 En primer lugar crear una carpeta llamada `quast` dentro de `/assemblies`, con una subcarpeta llamada `mitoSINGLE`. A continuación elegir los que creemos son los dos mejores ensamblados priducidos con ABySS para el set de datos single-read y el ensamblado porducido con SPAdes, y ejecutar un código similar al siguiente:
 ```
-python quast.py -o /home/estudiante/TP4/assemblies/quast/mitoSINGLE -R /home/estudiante/TP4/ref_genome/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa.gz -g /home/estudiante/TP4/ref_genome/HS.MT.gff.gz -t 2 -l abss39.SE,abss41.SE,spds.SE --circos --single /home/estudiante/TP4/reads/GA2_DRR001063_redset.fastq.gz /home/estudiante/TP4/assemblies/mitoSINGLE/abyss/k39/Hsap_mitoSE.k39-unitigs.fa /home/estudiante/TP4/assemblies/mitoSINGLE/abyss/k41/Hsap_mitoSE.k41-unitigs.fa /home/estudiante/TP4/assemblies/mitoSINGLE/spades/scaffolds.fasta
+QUAST -o /home/estudiante/TP4/assemblies/quast/mitoSINGLE -R /home/estudiante/TP4/ref_genome/Homo_sapiens.GRCh37.74.dna.chromosome.MT.fa.gz -g /home/estudiante/TP4/ref_genome/HS.MT.gff.gz -t 2 -l abss39.SE,abss41.SE,spds.SE --circos --single /home/estudiante/TP4/reads/GA2_DRR001063_redset.fastq.gz /home/estudiante/TP4/assemblies/mitoSINGLE/abyss/k39/Hsap_mitoSE.k39-unitigs.fa /home/estudiante/TP4/assemblies/mitoSINGLE/abyss/k41/Hsap_mitoSE.k41-unitigs.fa /home/estudiante/TP4/assemblies/mitoSINGLE/spades/scaffolds.fasta
 ```
 
 Abrir el archivo report.html que se genera en la carpeta de salida con un navegador y explorar todos los recursos que ofrece.
