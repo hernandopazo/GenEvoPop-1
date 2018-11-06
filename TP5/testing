@@ -1,1 +1,10 @@
+### [Trabajo Práctico N° 5. RNA-Seq: Introducción al análisis de expresión diferencial](https://docs.google.com/presentation/d/1gRdamhUnbwNt5dH0sQ93gvowMjzmFqAlxWwkxLSCHgI/edit?usp=sharing)<br/><br/>
 
+
+**Ejercicio 1.** Alineamiento de lecturas de RNA-Seq a una referencia genómica
+
+Para mapear lecturas provenientes de secuenciación transcriptómica a un genoma de referencia, se utilizará [STAR](https://github.com/alexdobin/STAR), un alineador para datos de RNA-Seq moderno, rápido y ligero.
+
+¿Qué diferencias tiene que tener un programa que mapea lecturas de RNA-Seq con uno que mapea lecturas de WGS?
+
+Se utilizará un set de datos reducido de [Gonzales _et al._ (2018)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0194581) en el cual se evalúa la expresión diferencial entre células con trisomía para el cromosoma 21 y células control. 
