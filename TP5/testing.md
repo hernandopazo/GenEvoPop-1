@@ -24,3 +24,6 @@ Para mapear el transcriptoma correspondiente a la primer réplica biológica de 
 ```
 STAR --runMode alignReads --runThreadN 3 --genomeDir  /home/estudiante/TP5/ref_genome/index --readFilesIn /home/estudiante/TP5/reads/SRR5874669_c21_sub.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/estudiante/TP5/STAR/nIPSC_T/r1/nIPSC_T_r1. --outSAMattrIHstart 0 --outSAMstrandField intronMotif --outSAMtype BAM SortedByCoordinate
 ```
+
+Modifique de forma correspondiente la línea de código anterior para ejecutar los 5 alineamientos restantes. Explore el contenido del archivo con terminación _.Log.final.out_ que se genera en cada caso. ¿Cómo resultaron los mapeos?
+
