@@ -27,3 +27,6 @@ STAR --runMode alignReads --runThreadN 3 --genomeDir  /home/estudiante/TP5/ref_g
 
 Modifique de forma correspondiente la línea de código anterior para ejecutar los 5 alineamientos restantes. Explore el contenido del archivo con terminación _.Log.final.out_ que se genera en cada caso. ¿Cómo resultaron los mapeos?
 
+Teniendo en cuenta lo realizado en el TP4, ¿cómo haría para visulizar los alineamientos con IGV?
+
+
