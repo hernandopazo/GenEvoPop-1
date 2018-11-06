@@ -30,3 +30,8 @@ Modifique de forma correspondiente la línea de código anterior para ejecutar l
 Teniendo en cuenta lo realizado en el TP4, ¿cómo haría para visulizar los alineamientos con IGV?
 
 
+**Ejercicio 2.** Cálculo de la expresión génica
+
+Para hacer un conteo de lecturas y calcular datos de expresión génica, se va a utilizar el programa [StringTie](https://ccb.jhu.edu/software/stringtie/), un ensamblador de transcriptos basado en referencia que a su vez calcula valores de expresión.
+
+
