@@ -13,5 +13,5 @@ Explore los datos del [proyecto](https://www.ncbi.nlm.nih.gov/bioproject/395984)
 En primer lugar hay que indexar la referencia sobre la que se va a mapear, en este caso la referencia es un subset que consiste solo en el cromosoma 21 (notar que hay que descomprimir los archivos archivos fasta y gff3).
 Crear directorio el directorio `/home/estudiante/TP5/ref_genome/index` y ejecutar la siguiente línea de código:
 ```
-/home/diego/soft/STAR-2.6.0c/bin/Linux_x86_64/STAR --runThreadN 3 --runMode genomeGenerate --genomeDir /home/diego/Dropbox/Projects/GenEvoPop/TP5/ref_genome/index --genomeFastaFiles /home/diego/Dropbox/Projects/GenEvoPop/TP5/ref_genome/Homo_sapiens.GRCh38.dna.chromosome.21.fa --sjdbGTFfile /home/diego/Dropbox/Projects/GenEvoPop/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 --sjdbGTFtagExonParentTranscript Parent
+STAR --runThreadN 3 --runMode genomeGenerate --genomeDir /home/estudiante/TP5/ref_genome/index --genomeFastaFiles /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.dna.chromosome.21.fa --sjdbGTFfile /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 --sjdbGTFtagExonParentTranscript Parent
 ```
