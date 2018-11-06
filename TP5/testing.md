@@ -15,3 +15,12 @@ Crear directorio el directorio `/home/estudiante/TP5/ref_genome/index` y ejecuta
 ```
 STAR --runThreadN 3 --runMode genomeGenerate --genomeDir /home/estudiante/TP5/ref_genome/index --genomeFastaFiles /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.dna.chromosome.21.fa --sjdbGTFfile /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 --sjdbGTFtagExonParentTranscript Parent
 ```
+
+A continuación se realizarán los mapeos de cada transcriptoma a la referencia.
+Dentro de `/TP5`, crear los directorios necesarios utilizando la siguiente línea de código:
+`mkdir -p STAR/nIPSC_D/r1 STAR/nIPSC_D/r2 STAR/nIPSC_D/r3 STAR/nIPSC_T/r1 STAR/nIPSC_T/r2 STAR/nIPSC_T/r3`
+
+Para mapear el transcriptoma correspondiente a la primer réplica biológica de las células nIPSC Trisómicas, ejecute la siguiente línea de código:
+```
+STAR --runMode alignReads --runThreadN 3 --genomeDir  /home/estudiante/TP5/ref_genome/index --readFilesIn /home/estudiante/TP5/reads/SRR5874669_c21_sub.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/estudiante/TP5/STAR/nIPSC_T/r1/nIPSC_T_r1. --outSAMattrIHstart 0 --outSAMstrandField intronMotif --outSAMtype BAM SortedByCoordinate
+```
