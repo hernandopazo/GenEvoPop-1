@@ -34,4 +34,14 @@ Teniendo en cuenta lo realizado en el TP4, ¿cómo haría para visulizar los ali
 
 Para hacer un conteo de lecturas y calcular datos de expresión génica, se va a utilizar el programa [StringTie](https://ccb.jhu.edu/software/stringtie/), un ensamblador de transcriptos basado en referencia que a su vez calcula valores de expresión.
 
+Dentro de `/TP5`, crear los directorios necesarios utilizando la siguiente línea de código:
+```
+mkdir -p StringTie/nIPSC_D/r1 StringTie/nIPSC_D/r2 StringTie/nIPSC_D/r3 StringTie/nIPSC_T/r1 StringTie/nIPSC_T/r2 StringTie/nIPSC_T/r3
+```
+
+Para ejecutar StringTie sobre los datos correspondientes a la primer réplica biológica de las células nIPSC Trisómicas, utilice la siguiente línea de código:
+```
+stringtie /home/estudiante/TP5/STAR/nIPSC_T/r1/nIPSC_T_r1.Aligned.sortedByCoord.out.bam -o /home/estudiante/TP5/StringTie/nIPSC_T/r1/nIPSC_T_r1.gtf -p 3 -G /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 -l STRG.nIPSC_T_r1 -A /home/estudiante/TP5/StringTie/nIPSC_T/r1/nIPSC_T_r1.abund.tab -C /home/estudiante/TP5/StringTie/nIPSC_T/r1/nIPSC_T_r1.cov_refs.gtf -B -e -v
+```
+
 
