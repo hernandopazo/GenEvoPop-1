@@ -66,3 +66,10 @@ python2.7 /home/estudiante/TP5/prepDE.py -i /home/estudiante/TP5/StringTie/sampl
 Explore la tabla de genes obtenida. Utilice el comando `sed -i 's/gene://' gene_count_matrix.csv` para modificar el nombre de los genes de forma apropiada.
 
 
+
+**Ejercicio 3.** Análisis de expresión diferencial
+
+Para analizar la expresión diferencial entre las condiciones se van a utilizar paquetes (programas) específicos para el lenguaje de programación estadística [R](https://cran.r-project.org/), usando [RStudio](https://www.rstudio.com/) como interfaz.
+Todas las instrucciones para este ejercicio se encuentran en el archivo _expresion.R_ en la carpeta `/TP5`.
+Crear la carpeta `/home/estudiante/TP5/DE` y abrir el archivo _expresion.R_ con RStudio.
+
