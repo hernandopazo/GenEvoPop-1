@@ -1,5 +1,6 @@
-## TP5
-
+# TP5
+## Short DE Analysis with NOISeq
+### v06.2018
 
 # Download & load required packages ####
 
