@@ -50,12 +50,12 @@ A continuación se realizará una tabla con los conteos de los seis sets de dato
 Para ejecutarse, el script requiere que generemos un archivo de texto en el cual le indiquemos el nombre de cada tratamiento y la ruta del archivo .gtf generado por StringTie.
 Crear un archivo llamado _sample_lst.txt_ dentro de la carpeta `/StringTie` que contenga lo siguiente:
 ```
-nIPSC_T_r1	/home/diego/Dropbox/Projects/GenEvoPop/TP5/StringTie/nIPSC_T/r1/nIPSC_T_r1.gtf
-nIPSC_T_r2	/home/diego/Dropbox/Projects/GenEvoPop/TP5/StringTie/nIPSC_T/r2/nIPSC_T_r2.gtf
-nIPSC_T_r3	/home/diego/Dropbox/Projects/GenEvoPop/TP5/StringTie/nIPSC_T/r3/nIPSC_T_r3.gtf
-nIPSC_D_r1	/home/diego/Dropbox/Projects/GenEvoPop/TP5/StringTie/nIPSC_D/r1/nIPSC_D_r1.gtf
-nIPSC_D_r2	/home/diego/Dropbox/Projects/GenEvoPop/TP5/StringTie/nIPSC_D/r2/nIPSC_D_r2.gtf
-nIPSC_D_r3	/home/diego/Dropbox/Projects/GenEvoPop/TP5/StringTie/nIPSC_D/r3/nIPSC_D_r3.gtf
+nIPSC_T_r1	/home/estudiante/TP5/StringTie/nIPSC_T/r1/nIPSC_T_r1.gtf
+nIPSC_T_r2	/home/estudiante/TP5/StringTie/nIPSC_T/r2/nIPSC_T_r2.gtf
+nIPSC_T_r3	/home/estudiante/TP5/StringTie/nIPSC_T/r3/nIPSC_T_r3.gtf
+nIPSC_D_r1	/home/estudiante/TP5/StringTie/nIPSC_D/r1/nIPSC_D_r1.gtf
+nIPSC_D_r2	/home/estudiante/TP5/StringTie/nIPSC_D/r2/nIPSC_D_r2.gtf
+nIPSC_D_r3	/home/estudiante/TP5/StringTie/nIPSC_D/r3/nIPSC_D_r3.gtf
 ```
 
 Para crear la tabla de conteos, ejecutar la siguiente línea de código:
