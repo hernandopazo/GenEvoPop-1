@@ -7,11 +7,13 @@ Para mapear lecturas provenientes de secuenciación transcriptómica a un genoma
 
 - ¿Qué diferencias tiene que tener un programa que mapea lecturas de RNA-Seq con uno que mapea lecturas de WGS?
 
-Se utilizará un set de datos reducido de [Gonzales _et al._ (2018)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0194581) en el cual se evalúa la expresión diferencial entre células con trisomía para el cromosoma 21 y células control, con tres réplicas biológicas en cada caso.
-Explore los datos del [proyecto](https://www.ncbi.nlm.nih.gov/bioproject/395984). Verifique los nombres de los archivos en la carpeta `/home/estudiante/TP5/reads` (SRR5874669 al SRR5874674) a través del [browser del Sequence Read Archive](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=run_browser) y acceda a los datos de cada muestra. ¿Cuáles son las réplicas trisómicas y cuáles son las disómicas? ¿De qué tipo de células se trata?
+Se utilizará un set de datos reducido de [Gonzales _et al._ (2018)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0194581) en el cual se evalúa la expresión diferencial entre células con trisomía para el cromosoma 21 y células control, con tres réplicas biológicas en cada caso.<br/>
+Explore los datos del [proyecto](https://www.ncbi.nlm.nih.gov/bioproject/395984). Verifique los nombres de los archivos en la carpeta `/home/estudiante/TP5/reads` (SRR5874669 al SRR5874674) a través del [browser del Sequence Read Archive](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=run_browser) y acceda a los datos de cada muestra.
 
-En primer lugar hay que indexar la referencia sobre la que se va a mapear, en este caso la referencia es un subset que consiste solo en el cromosoma 21 (notar que hay que descomprimir los archivos archivos fasta y gff3).
-Crear directorio el directorio `/home/estudiante/TP5/ref_genome/index` y ejecutar la siguiente línea de código:
+- ¿Cuáles son las réplicas trisómicas y cuáles son las disómicas? ¿De qué tipo de células se trata?
+
+En primer lugar hay que indexar la referencia sobre la que se va a mapear, en este caso la referencia es un subset que consiste solo en el cromosoma 21 (notar que hay que descomprimir los archivos archivos fasta y gff3).<br/>
+Crear el directorio `/home/estudiante/TP5/ref_genome/index` y ejecutar la siguiente línea de código:
 ```
 STAR --runThreadN 3 --runMode genomeGenerate --genomeDir /home/estudiante/TP5/ref_genome/index --genomeFastaFiles /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.dna.chromosome.21.fa --sjdbGTFfile /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 --sjdbGTFtagExonParentTranscript Parent
 ```
