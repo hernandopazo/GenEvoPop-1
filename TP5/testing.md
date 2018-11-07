@@ -71,5 +71,6 @@ Explore la tabla de genes obtenida. Utilice el comando `sed -i 's/gene://' gene_
 
 Para analizar la expresión diferencial entre las condiciones se van a utilizar paquetes (programas) específicos para el lenguaje de programación estadística [R](https://cran.r-project.org/), usando [RStudio](https://www.rstudio.com/) como interfaz.
 Todas las instrucciones para este ejercicio se encuentran en el archivo _expresion.R_ en la carpeta `/TP5`.
-Crear la carpeta `/home/estudiante/TP5/DE` y abrir el archivo _expresion.R_ con RStudio.
+Crear la carpeta `/home/estudiante/TP5/DE` y abrir el archivo _expresion.R_ con RStudio
 
+Una vez obtenida la lista de genes diferencialmente expresados explorar las webs de [g:Profiler](https://biit.cs.ut.ee/gprofiler/index.cgi), [HumanMine](http://www.humanmine.org/humanmine/bag.do?subtab=upload), [Reactome](https://reactome.org/PathwayBrowser/#TOOL=AT) y [STRING](https://string-db.org/cgi/input.pl?input_page_active_form=multiple_identifiers). Discutir los resultados.
