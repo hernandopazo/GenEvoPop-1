@@ -20,7 +20,9 @@ STAR --runThreadN 3 --runMode genomeGenerate --genomeDir /home/estudiante/TP5/re
 
 A continuación se realizarán los mapeos de cada transcriptoma a la referencia.<br/>
 Dentro de `/TP5`, crear los directorios necesarios utilizando la siguiente línea de código:
-`mkdir -p STAR/nIPSC_D/r1 STAR/nIPSC_D/r2 STAR/nIPSC_D/r3 STAR/nIPSC_T/r1 STAR/nIPSC_T/r2 STAR/nIPSC_T/r3`
+```
+mkdir -p STAR/nIPSC_D/r1 STAR/nIPSC_D/r2 STAR/nIPSC_D/r3 STAR/nIPSC_T/r1 STAR/nIPSC_T/r2 STAR/nIPSC_T/r3`
+```
 
 Para mapear el transcriptoma correspondiente a la primer réplica biológica de las células nIPSC Trisómicas, ejecute la siguiente línea de código:
 ```
