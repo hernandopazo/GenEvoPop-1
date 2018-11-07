@@ -43,5 +43,26 @@ Para ejecutar StringTie sobre los datos correspondientes a la primer réplica bi
 ```
 stringtie /home/estudiante/TP5/STAR/nIPSC_T/r1/nIPSC_T_r1.Aligned.sortedByCoord.out.bam -o /home/estudiante/TP5/StringTie/nIPSC_T/r1/nIPSC_T_r1.gtf -p 3 -G /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 -l STRG.nIPSC_T_r1 -A /home/estudiante/TP5/StringTie/nIPSC_T/r1/nIPSC_T_r1.abund.tab -C /home/estudiante/TP5/StringTie/nIPSC_T/r1/nIPSC_T_r1.cov_refs.gtf -B -e -v
 ```
+Modifique de forma correspondiente la línea de código anterior para los cinco set de datos restantes. Explore los archivos generados. Observe los parámetros utilizados en la ejecución de StringTie, ¿qué función cumplen los parámetros _-B_ y _-e_?
+
+
+A continuación se realizará una tabla con los conteos de los seis sets de datos utilizando un script desarrollado por los autores de StringTie.
+Para ejecutarse, el script requiere que generemos un archivo de texto en el cual le indiquemos el nombre de cada tratamiento y la ruta del archivo .gtf generado por StringTie.
+Crear un archivo llamado _sample_lst.txt_ dentro de la carpeta `/StringTie` que contenga lo siguiente:
+```
+nIPSC_T_r1	/home/estudiante/TP5/StringTie/nIPSC_T/r1/
+nIPSC_T_r2	/home/estudiante/TP5/StringTie/nIPSC_T/r2/
+nIPSC_T_r3	/home/estudiante/TP5/StringTie/nIPSC_T/r3/
+nIPSC_D_r1	/home/estudiante/TP5/StringTie/nIPSC_D/r1/
+nIPSC_D_r2	/home/estudiante/TP5/StringTie/nIPSC_D/r2/
+nIPSC_D_r3	/home/estudiante/TP5/StringTie/nIPSC_D/r3/
+```
+
+Para crear la tabla de conteos, ejecutar la siguiente línea de código:
+```
+python2.7 /home/estudiante/TP5/prepDE.py -i /home/estudiante/TP5/StringTie/sample_lst.txt -g /home/estudiante/TP5/StringTie/gene_count_matrix.csv -t /home/estudiante/TP5/StringTie/transcript_count_matrix.csv -l 126
+```
+
+Explore la tabla de genes obtenida. Utilice el comando `sed -i 's/gene://' gene_count_matrix.csv` para modificar el nombre de los genes de forma apropiada.
 
 
