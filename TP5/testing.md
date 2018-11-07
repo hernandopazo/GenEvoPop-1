@@ -3,7 +3,7 @@
 
 **Ejercicio 1.** Alineamiento de lecturas de RNA-Seq a una referencia genómica
 
-Para mapear lecturas provenientes de secuenciación transcriptómica a un genoma de referencia, se utilizará [STAR](https://github.com/alexdobin/STAR), un alineador para datos de RNA-Seq moderno, rápido y ligero.
+Para mapear lecturas provenientes de secuenciación transcriptómica a un genoma de referencia, se utilizará [STAR](https://github.com/alexdobin/STAR), un alineador para datos de RNA-Seq moderno, rápido y ligero.<br/>
 
 ¿Qué diferencias tiene que tener un programa que mapea lecturas de RNA-Seq con uno que mapea lecturas de WGS?
 
