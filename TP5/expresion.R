@@ -14,7 +14,7 @@ library(RColorBrewer)
 
 # Import STAR/StringTie raw counts ####
 
-setwd("/home/diego/Dropbox/Projects/GenEvoPop/TP5/DE")
+setwd("/home/estudiante/TP5/DE")
 
 mycounts <- as.matrix(read.csv("/home/estudiante/TP5/StringTie/gene_count_matrix.csv",
                               header= TRUE, sep= ",", row.names= "gene_id"))
