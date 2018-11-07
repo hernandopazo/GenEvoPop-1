@@ -12,13 +12,13 @@ Explore los datos del [proyecto](https://www.ncbi.nlm.nih.gov/bioproject/395984)
 
 - ¿Cuáles son las réplicas trisómicas y cuáles son las disómicas? ¿De qué tipo de células se trata?
 
-En primer lugar hay que indexar la referencia sobre la que se va a mapear, en este caso la referencia es un subset que consiste solo en el cromosoma 21 (notar que hay que descomprimir los archivos archivos fasta y gff3).<br/>
+En primer lugar hay que indexar la referencia sobre la que se va a mapear, en este caso la referencia es un subset que consiste solo en el cromosoma 21 (notar que hay que descomprimir los archivos archivos _fasta_ y _gff3_).<br/>
 Crear el directorio `/home/estudiante/TP5/ref_genome/index` y ejecutar la siguiente línea de código:
 ```
 STAR --runThreadN 3 --runMode genomeGenerate --genomeDir /home/estudiante/TP5/ref_genome/index --genomeFastaFiles /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.dna.chromosome.21.fa --sjdbGTFfile /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 --sjdbGTFtagExonParentTranscript Parent
 ```
 
-A continuación se realizarán los mapeos de cada transcriptoma a la referencia.
+A continuación se realizarán los mapeos de cada transcriptoma a la referencia.<br/>
 Dentro de `/TP5`, crear los directorios necesarios utilizando la siguiente línea de código:
 `mkdir -p STAR/nIPSC_D/r1 STAR/nIPSC_D/r2 STAR/nIPSC_D/r3 STAR/nIPSC_T/r1 STAR/nIPSC_T/r2 STAR/nIPSC_T/r3`
 
