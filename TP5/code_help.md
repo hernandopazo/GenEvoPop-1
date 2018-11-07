@@ -32,3 +32,32 @@ STAR --runMode alignReads --runThreadN 3 --genomeDir /home/estudiante/TP5/ref_ge
 ```
 STAR --runMode alignReads --runThreadN 3 --genomeDir /home/estudiante/TP5/ref_genome/index --readFilesIn /home/estudiante/TP5/reads/SRR5874674_c21_sub.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/estudiante/TP5/STAR/nIPSC_D/r3/nIPSC_D_r3. --outSAMattrIHstart 0 --outSAMstrandField intronMotif --outSAMtype BAM SortedByCoordinate
 ```
+
+
+```
+mkdir -p StringTie/nIPSC_D/r1 StringTie/nIPSC_D/r2 StringTie/nIPSC_D/r3 StringTie/nIPSC_T/r1 StringTie/nIPSC_T/r2 StringTie/nIPSC_T/r3
+```
+
+
+```
+stringtie /home/estudiante/TP5/STAR/nIPSC_T/r1/nIPSC_T_r1.Aligned.sortedByCoord.out.bam -o /home/estudiante/TP5/StringTie/nIPSC_T/r1/nIPSC_T_r1.gtf -p 3 -G /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 -l STRG.nIPSC_T_r1 -A /home/estudiante/TP5/StringTie/nIPSC_T/r1/nIPSC_T_r1.abund.tab -C /home/estudiante/TP5/StringTie/nIPSC_T/r1/nIPSC_T_r1.cov_refs.gtf -B -e -v
+```
+```
+stringtie /home/estudiante/TP5/STAR/nIPSC_T/r2/nIPSC_T_r2Aligned.sortedByCoord.out.bam -o /home/estudiante/TP5/StringTie/nIPSC_T/r2/nIPSC_T_r2.gtf -p 3 -G /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 -l STRG.nIPSC_T_r2 -A /home/estudiante/TP5/StringTie/nIPSC_T/r2/nIPSC_T_r2.abund.tab -C /home/estudiante/TP5/StringTie/nIPSC_T/r2/nIPSC_T_r2.cov_refs.gtf -B -e -v
+```
+```
+stringtie /home/estudiante/TP5/STAR/nIPSC_T/r3/nIPSC_T_r3Aligned.sortedByCoord.out.bam -o /home/estudiante/TP5/StringTie/nIPSC_T/r3/nIPSC_T_r3.gtf -p 3 -G /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 -l STRG.nIPSC_T_r3 -A /home/estudiante/TP5/StringTie/nIPSC_T/r3/nIPSC_T_r3.abund.tab -C /home/estudiante/TP5/StringTie/nIPSC_T/r3/nIPSC_T_r3.cov_refs.gtf -B -e -v
+```
+
+```
+stringtie /home/estudiante/TP5/STAR/nIPSC_D/r1/nIPSC_D_r1Aligned.sortedByCoord.out.bam -o /home/estudiante/TP5/StringTie/nIPSC_D/r1/nIPSC_D_r1.gtf -p 3 -G /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 -l STRG.nIPSC_D_r1 -A /home/estudiante/TP5/StringTie/nIPSC_D/r1/nIPSC_D_r1.abund.tab -C /home/estudiante/TP5/StringTie/nIPSC_D/r1/nIPSC_D_r1.cov_refs.gtf -B -e -v
+```
+```
+stringtie /home/estudiante/TP5/STAR/nIPSC_D/r2/nIPSC_D_r2Aligned.sortedByCoord.out.bam -o /home/estudiante/TP5/StringTie/nIPSC_D/r2/nIPSC_D_r2.gtf -p 3 -G /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 -l STRG.nIPSC_D_r2 -A /home/estudiante/TP5/StringTie/nIPSC_D/r2/nIPSC_D_r2.abund.tab -C /home/estudiante/TP5/StringTie/nIPSC_D/r2/nIPSC_D_r2.cov_refs.gtf -B -e -v
+```
+```
+stringtie /home/estudiante/TP5/STAR/nIPSC_D/r3/nIPSC_D_r3Aligned.sortedByCoord.out.bam -o/home/estudiante/TP5/StringTie/nIPSC_D/r3/nIPSC_D_r3.gtf -p 3 -G /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 -l STRG.nIPSC_D_r3 -A /home/estudiante/TP5/StringTie/nIPSC_D/r3/nIPSC_D_r3.abund.tab -C /home/estudiante/TP5/StringTie/nIPSC_D/r3/nIPSC_D_r3.cov_refs.gtf -B -e -v
+```
+
+
+
