@@ -1,4 +1,4 @@
-## [Trabajo Práctico N° 5. RNA-Seq: Introducción al análisis de expresión diferencial](https://docs.google.com/presentation/d/1gRdamhUnbwNt5dH0sQ93gvowMjzmFqAlxWwkxLSCHgI/edit?usp=sharing)
+### [Trabajo Práctico N° 5. RNA-Seq: Introducción al análisis de expresión diferencial](https://docs.google.com/presentation/d/1gRdamhUnbwNt5dH0sQ93gvowMjzmFqAlxWwkxLSCHgI/edit?usp=sharing)
 ___
 
 **Ejercicio 1.** Alineamiento de lecturas de RNA-Seq a una referencia genómica
