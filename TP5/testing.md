@@ -11,27 +11,29 @@ Se utilizará un set de datos reducido de [Gonzales _et al._ (2018)](https://jou
 Explore los datos del [proyecto](https://www.ncbi.nlm.nih.gov/bioproject/395984). Verifique los nombres de los archivos en la carpeta `/home/estudiante/TP5/reads` (SRR5874669 al SRR5874674) a través del [browser del Sequence Read Archive](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=run_browser) y acceda a los datos de cada muestra.
 
 - ¿Cuáles son las réplicas trisómicas y cuáles son las disómicas? ¿De qué tipo de células se trata?
-<br/><br/>
+
+
 En primer lugar hay que indexar la referencia sobre la que se va a mapear, en este caso la referencia es un subset que consiste solo en el cromosoma 21 (notar que hay que descomprimir los archivos archivos _fasta_ y _gff3_).<br/>
 Crear el directorio `/home/estudiante/TP5/ref_genome/index` y ejecutar la siguiente línea de código:
 ```
 STAR --runThreadN 3 --runMode genomeGenerate --genomeDir /home/estudiante/TP5/ref_genome/index --genomeFastaFiles /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.dna.chromosome.21.fa --sjdbGTFfile /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 --sjdbGTFtagExonParentTranscript Parent
 ```
-<br/><br/>
+
+
 A continuación se realizarán los mapeos de cada transcriptoma a la referencia.<br/>
 Dentro de `/TP5`, crear los directorios necesarios utilizando la siguiente línea de código:
 ```
 mkdir -p STAR/nIPSC_D/r1 STAR/nIPSC_D/r2 STAR/nIPSC_D/r3 STAR/nIPSC_T/r1 STAR/nIPSC_T/r2 STAR/nIPSC_T/r3`
 ```
-<br/>
+
 Para mapear el transcriptoma correspondiente a la primer réplica biológica de las células nIPSC Trisómicas, ejecute la siguiente línea de código:
 ```
 STAR --runMode alignReads --runThreadN 3 --genomeDir  /home/estudiante/TP5/ref_genome/index --readFilesIn /home/estudiante/TP5/reads/SRR5874669_c21_sub.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/estudiante/TP5/STAR/nIPSC_T/r1/nIPSC_T_r1. --outSAMattrIHstart 0 --outSAMstrandField intronMotif --outSAMtype BAM SortedByCoordinate
 ```
 
-Modifique de forma correspondiente la línea de código anterior para ejecutar los 5 alineamientos restantes. Explore el contenido del archivo con terminación _.Log.final.out_ que se genera en cada caso. ¿Cómo resultaron los mapeos?
+- Modifique de forma correspondiente la línea de código anterior para ejecutar los 5 alineamientos restantes. Explore el contenido del archivo con terminación _.Log.final.out_ que se genera en cada caso. ¿Cómo resultaron los mapeos?
 
-Teniendo en cuenta lo realizado en el TP4, ¿cómo haría para visulizar los alineamientos con IGV?
+- Teniendo en cuenta lo realizado en el TP4, ¿cómo haría para visulizar los alineamientos con IGV?
 
 
 **Ejercicio 2.** Cálculo de la expresión génica
