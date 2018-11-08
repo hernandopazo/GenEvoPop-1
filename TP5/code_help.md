@@ -1,9 +1,10 @@
-neuron IPSC Trisomic:<br/>
+Identidad de las lecturas:<br/>
+- neuron IPSC Trisomic
 [SRR5874669](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418729)<br/>
 [SRR5874670](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418728)<br/>
 [SRR5874671](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418727)
 
-neuron IPSC Disomic:<br/>
+- neuron IPSC Disomic<br/>
 [SRR5874672](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418726)<br/>
 [SRR5874673](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418736)<br/>
 [SRR5874674](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418737)
