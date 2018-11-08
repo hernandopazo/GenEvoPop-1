@@ -29,6 +29,7 @@ STAR --runMode alignReads --runThreadN 3 --genomeDir /home/estudiante/TP5/ref_ge
 STAR --runMode alignReads --runThreadN 3 --genomeDir /home/estudiante/TP5/ref_genome/index --readFilesIn /home/estudiante/TP5/reads/SRR5874671_c21_sub.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/estudiante/TP5/STAR/nIPSC_T/r3/nIPSC_T_r3. --outSAMattrIHstart 0 --outSAMstrandField intronMotif --outSAMtype BAM SortedByCoordinate
 ```
 <br/>
+
 ```
 STAR --runMode alignReads --runThreadN 3 --genomeDir /home/estudiante/TP5/ref_genome/index --readFilesIn /home/estudiante/TP5/reads/SRR5874672_c21_sub.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/estudiante/TP5/STAR/nIPSC_D/r1/nIPSC_D_r1. --outSAMattrIHstart 0 --outSAMstrandField intronMotif --outSAMtype BAM SortedByCoordinate
 ```
