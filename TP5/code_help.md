@@ -1,3 +1,4 @@
+**E.1**
 Identidad de las lecturas:
 - neuron IPSC Trisomic<br/>
 [SRR5874669](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418729)<br/>
@@ -27,7 +28,7 @@ STAR --runMode alignReads --runThreadN 3 --genomeDir /home/estudiante/TP5/ref_ge
 ```
 STAR --runMode alignReads --runThreadN 3 --genomeDir /home/estudiante/TP5/ref_genome/index --readFilesIn /home/estudiante/TP5/reads/SRR5874671_c21_sub.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/estudiante/TP5/STAR/nIPSC_T/r3/nIPSC_T_r3. --outSAMattrIHstart 0 --outSAMstrandField intronMotif --outSAMtype BAM SortedByCoordinate
 ```
-
+<br/>
 ```
 STAR --runMode alignReads --runThreadN 3 --genomeDir /home/estudiante/TP5/ref_genome/index --readFilesIn /home/estudiante/TP5/reads/SRR5874672_c21_sub.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/estudiante/TP5/STAR/nIPSC_D/r1/nIPSC_D_r1. --outSAMattrIHstart 0 --outSAMstrandField intronMotif --outSAMtype BAM SortedByCoordinate
 ```
@@ -37,8 +38,9 @@ STAR --runMode alignReads --runThreadN 3 --genomeDir /home/estudiante/TP5/ref_ge
 ```
 STAR --runMode alignReads --runThreadN 3 --genomeDir /home/estudiante/TP5/ref_genome/index --readFilesIn /home/estudiante/TP5/reads/SRR5874674_c21_sub.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/estudiante/TP5/STAR/nIPSC_D/r3/nIPSC_D_r3. --outSAMattrIHstart 0 --outSAMstrandField intronMotif --outSAMtype BAM SortedByCoordinate
 ```
+<br/><br/>
 
-
+**E.2**
 ```
 mkdir -p StringTie/nIPSC_D/r1 StringTie/nIPSC_D/r2 StringTie/nIPSC_D/r3 StringTie/nIPSC_T/r1 StringTie/nIPSC_T/r2 StringTie/nIPSC_T/r3
 ```
