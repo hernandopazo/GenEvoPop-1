@@ -51,8 +51,8 @@ Para ejecutar StringTie sobre los datos correspondientes a la primer réplica bi
 ```
 stringtie /home/estudiante/TP5/STAR/nIPSC_T/r1/nIPSC_T_r1.Aligned.sortedByCoord.out.bam -o /home/estudiante/TP5/StringTie/nIPSC_T/r1/nIPSC_T_r1.gtf -p 3 -G /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 -l STRG.nIPSC_T_r1 -A /home/estudiante/TP5/StringTie/nIPSC_T/r1/nIPSC_T_r1.abund.tab -C /home/estudiante/TP5/StringTie/nIPSC_T/r1/nIPSC_T_r1.cov_refs.gtf -B -e -v
 ```
-Modifique de forma correspondiente la línea de código anterior para los cinco set de datos restantes. Explore los archivos generados. Observe los parámetros utilizados en la ejecución de StringTie, ¿qué función cumplen los parámetros _-B_ y _-e_?
-
+- Modifique de forma correspondiente la línea de código anterior para los cinco set de datos restantes. Explore los archivos generados. Observe los parámetros utilizados en la ejecución de StringTie, ¿qué función cumplen los parámetros _-B_ y _-e_?
+<br/>
 
 A continuación se realizará una tabla con los conteos de los seis sets de datos utilizando un script desarrollado por los autores de StringTie.
 Para ejecutarse, el script requiere que generemos un archivo de texto en el cual le indiquemos el nombre de cada tratamiento y la ruta del archivo .gtf generado por StringTie.
