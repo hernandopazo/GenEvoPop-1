@@ -1,16 +1,20 @@
-neuron IPSC Trisomic
-[SRR5874669](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418729)
-[SRR5874670](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418728)
+neuron IPSC Trisomic:<br/>
+[SRR5874669](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418729)<br/>
+[SRR5874670](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418728)<br/>
 [SRR5874671](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418727)
 
-neuron IPSC Disomic
-[SRR5874672](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418726)
-[SRR5874673](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418736)
+neuron IPSC Disomic:<br/>
+[SRR5874672](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418726)<br/>
+[SRR5874673](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418736)<br/>
 [SRR5874674](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418737)
 
-Descomprimir archivos fasta y gff3 de la referencia
+
+Descomprimir archivos fasta y gff3 de la referencia:
+```
 gzip -cdv Homo_sapiens.GRCh38.dna.chromosome.21.fa.gz > Homo_sapiens.GRCh38.dna.chromosome.21.fa
 gzip -cdv Homo_sapiens.GRCh38.92.chromosome.21.gff3.gz > Homo_sapiens.GRCh38.92.chromosome.21.gff3
+```
+
 
 
 ```
