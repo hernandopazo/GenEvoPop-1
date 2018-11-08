@@ -18,8 +18,7 @@ Crear el directorio `/home/estudiante/TP5/ref_genome/index` y ejecutar la siguie
 ```
 STAR --runThreadN 3 --runMode genomeGenerate --genomeDir /home/estudiante/TP5/ref_genome/index --genomeFastaFiles /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.dna.chromosome.21.fa --sjdbGTFfile /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 --sjdbGTFtagExonParentTranscript Parent
 ```
-<br/><br/>
-
+<br/>
 
 A continuación se realizarán los mapeos de cada transcriptoma a la referencia.<br/>
 Dentro de `/TP5`, crear los directorios necesarios utilizando la siguiente línea de código:
