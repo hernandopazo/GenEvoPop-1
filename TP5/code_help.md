@@ -1,4 +1,4 @@
-**E.1**
+**Ejercicio1**<br/>
 Identidad de las lecturas:
 - neuron IPSC Trisomic<br/>
 [SRR5874669](https://www.ncbi.nlm.nih.gov/biosample/SAMN07418729)<br/>
@@ -41,12 +41,8 @@ STAR --runMode alignReads --runThreadN 3 --genomeDir /home/estudiante/TP5/ref_ge
 ```
 <br/><br/>
 
-**E.2**
-```
-mkdir -p StringTie/nIPSC_D/r1 StringTie/nIPSC_D/r2 StringTie/nIPSC_D/r3 StringTie/nIPSC_T/r1 StringTie/nIPSC_T/r2 StringTie/nIPSC_T/r3
-```
-
-
+**Ejercicio2**<br/>
+Stringtie sobre todos los transcriptomas:
 ```
 stringtie /home/estudiante/TP5/STAR/nIPSC_T/r1/nIPSC_T_r1.Aligned.sortedByCoord.out.bam -o /home/estudiante/TP5/StringTie/nIPSC_T/r1/nIPSC_T_r1.gtf -p 3 -G /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 -l STRG.nIPSC_T_r1 -A /home/estudiante/TP5/StringTie/nIPSC_T/r1/nIPSC_T_r1.abund.tab -C /home/estudiante/TP5/StringTie/nIPSC_T/r1/nIPSC_T_r1.cov_refs.gtf -B -e -v
 ```
@@ -56,6 +52,7 @@ stringtie /home/estudiante/TP5/STAR/nIPSC_T/r2/nIPSC_T_r2.Aligned.sortedByCoord.
 ```
 stringtie /home/estudiante/TP5/STAR/nIPSC_T/r3/nIPSC_T_r3.Aligned.sortedByCoord.out.bam -o /home/estudiante/TP5/StringTie/nIPSC_T/r3/nIPSC_T_r3.gtf -p 3 -G /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 -l STRG.nIPSC_T_r3 -A /home/estudiante/TP5/StringTie/nIPSC_T/r3/nIPSC_T_r3.abund.tab -C /home/estudiante/TP5/StringTie/nIPSC_T/r3/nIPSC_T_r3.cov_refs.gtf -B -e -v
 ```
+<br/>
 
 ```
 stringtie /home/estudiante/TP5/STAR/nIPSC_D/r1/nIPSC_D_r1.Aligned.sortedByCoord.out.bam -o /home/estudiante/TP5/StringTie/nIPSC_D/r1/nIPSC_D_r1.gtf -p 3 -G /home/estudiante/TP5/ref_genome/Homo_sapiens.GRCh38.92.chromosome.21.gff3 -l STRG.nIPSC_D_r1 -A /home/estudiante/TP5/StringTie/nIPSC_D/r1/nIPSC_D_r1.abund.tab -C /home/estudiante/TP5/StringTie/nIPSC_D/r1/nIPSC_D_r1.cov_refs.gtf -B -e -v
