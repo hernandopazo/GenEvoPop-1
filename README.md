@@ -6,10 +6,10 @@ Trabajos Prácticos desarrollados inicialmente para el curso [**Genómica Evolut
 
 <br/><br/>
 
-### TP2: [Introducción a GNU/Linux](https://github.com/lunfardista/GenEvoPop/blob/master/TP2/README.md)
+### TP2. [Introducción a GNU/Linux](https://github.com/lunfardista/GenEvoPop/blob/master/TP2/README.md)
 
-### TP3: [Control y pre-procesamiento de datos de NGS](https://github.com/lunfardista/GenEvoPop/blob/master/TP3/README.md)
+### TP3. [Control y pre-procesamiento de datos de NGS](https://github.com/lunfardista/GenEvoPop/blob/master/TP3/README.md)
 
-### TP4: [Introducción al ensamblado/mapeo genómico](https://github.com/lunfardista/GenEvoPop/blob/master/TP4/README.md)
+### TP4. [Introducción al ensamblado/mapeo genómico](https://github.com/lunfardista/GenEvoPop/blob/master/TP4/README.md)
 
-### TP5: [Introducción a RNA-Seq](https://github.com/lunfardista/GenEvoPop/blob/master/TP5/README.md)
+### TP5. [RNA-Seq: Introducción al análisis de expresión diferencial](https://github.com/lunfardista/GenEvoPop/blob/master/TP5/README.md)
