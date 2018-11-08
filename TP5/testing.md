@@ -12,7 +12,7 @@ Se utilizará un set de datos reducido de [Gonzales _et al._ (2018)](https://jou
 Explore los datos del [proyecto](https://www.ncbi.nlm.nih.gov/bioproject/395984). Verifique los nombres de los archivos en la carpeta `/home/estudiante/TP5/reads` (SRR5874669 al SRR5874674) a través del [browser del Sequence Read Archive](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=run_browser) y acceda a los datos de cada muestra.
 
 - ¿Cuáles son las réplicas trisómicas y cuáles son las disómicas? ¿De qué tipo de células se trata?
-
+<br/>
 
 En primer lugar hay que indexar la referencia sobre la que se va a mapear, en este caso la referencia es un subset que consiste solo en el cromosoma 21 (notar que hay que descomprimir los archivos archivos _fasta_ y _gff3_).<br/>
 Crear el directorio `/home/estudiante/TP5/ref_genome/index` y ejecutar la siguiente línea de código:
