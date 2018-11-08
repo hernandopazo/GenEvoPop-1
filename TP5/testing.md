@@ -34,7 +34,7 @@ STAR --runMode alignReads --runThreadN 3 --genomeDir  /home/estudiante/TP5/ref_g
 
 - Modifique de forma correspondiente la línea de código anterior para ejecutar los 5 alineamientos restantes. Explore el contenido del archivo con terminación _.Log.final.out_ que se genera en cada caso. ¿Cómo resultaron los mapeos?
 
-- Teniendo en cuenta lo realizado en el TP4, ¿cómo haría para visulizar los alineamientos con IGV?
+- Teniendo en cuenta lo realizado en el [TP4](https://github.com/lunfardista/GenEvoPop/tree/master/TP4), ¿cómo haría para visulizar los alineamientos con IGV?
 <br/><br/><br/>
 
 
@@ -72,7 +72,7 @@ python2.7 /home/estudiante/TP5/prepDE.py -i /home/estudiante/TP5/StringTie/sampl
 ```
 
 Explore la tabla de genes obtenida. Utilice el comando `sed -i 's/gene://' gene_count_matrix.csv` para modificar el nombre de los genes de forma apropiada.
-<br/><br/>
+<br/><br/><br/>
 
 
 **Ejercicio 3.** Análisis de expresión diferencial
