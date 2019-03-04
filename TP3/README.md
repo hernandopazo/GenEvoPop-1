@@ -36,7 +36,7 @@ A continuación se realizaran las siguientes acciones en el set de datos paired-
 . Descartar aquellas lecturas que luego del procesado tengan menos de 50 nucleótidos, utilizando el parámetro `MINLEN:50`.<br/>
 Para ello, primero crear una carpeta llamada `trimm` dentro de la carpeta `/home/estudiante/TP3/reads/`, y luego ejecutar la siguiente línea de código:
 ```
-trimmomatic PE -trimlog /home/estudiante/TP3/reads/trimm/MISEQ_wgs_trimming.log /home/estudiante/TP3/reads/MISEQ_wgs_1.fastq.gz /home/estudiante/TP3/reads/MISEQ_wgs_2.fastq.gz /home/estudiante/TP3/reads/trimm/MISEQ_wgs_trim_1p.fastq.gz /home/estudiante/TP3/reads/trimm/MISEQ_wgs_trim_1u.fastq.gz /home/estudiante/TP3/reads/trimm/MISEQ_wgs_trim_2p.fastq.gz /home/estudiante/TP3/reads/trimm/MISEQ_wgs_trim_2u.fastq.gz ILLUMINACLIP:/home/estudiante/software/Trimmomatic-0.38/adapters/TruSeq3-PE.fa:2:30:10 LEADING:10 TRAILING:10 SLIDINGWINDOW:6:10 MINLEN:50
+trimmomatic PE -trimlog /home/estudiante/repos/tps_genevopop_2018/TP3_NGS_reads_QC/reads/trimm/MISEQ_wgs_trimming.log /home/estudiante/repos/tps_genevopop_2018/TP3_NGS_reads_QC/reads/MISEQ_wgs_1.fastq.gz /home/estudiante/repos/tps_genevopop_2018/TP3_NGS_reads_QC/reads/MISEQ_wgs_2.fastq.gz /home/estudiante/repos/tps_genevopop_2018/TP3_NGS_reads_QC/reads/MISEQ_wgs_trim_1p.fastq.gz /home/estudiante/repos/tps_genevopop_2018/TP3_NGS_reads_QC/reads/MISEQ_wgs_trim_1u.fastq.gz /home/estudiante/repos/tps_genevopop_2018/TP3_NGS_reads_QC/reads/MISEQ_wgs_trim_2p.fastq.gz /home/estudiante/repos/tps_genevopop_2018/TP3_NGS_reads_QC/reads/MISEQ_wgs_trim_2u.fastq.gz ILLUMINACLIP:/home/estudiante/software/Trimmomatic-0.38/adapters/TruSeq3-PE.fa:2:30:10 LEADING:10 TRAILING:10 SLIDINGWINDOW:6:10 MINLEN:50
 ```
 
 Explorar el registro generado (archivo _.log_). Visualizar en FastQC los archivos generados.<br/>
@@ -49,3 +49,6 @@ A partir de la información que se encuentra en el manual del programa:<br/>
 \- ¿Qué cambio en el código debería introducir si el set de datos no fuera pareado?
 
 Intentar mejorar las otras lecturas de Illumina disponibles.
+
+
+
