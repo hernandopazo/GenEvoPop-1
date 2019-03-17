@@ -1,4 +1,4 @@
-### [Trabajo Práctico N° 4. Introducción al ensamblado/mapeo genómico](https://docs.google.com/presentation/d/1gRdamhUnbwNt5dH0sQ93gvowMjzmFqAlxWwkxLSCHgI/edit?usp=sharing)<br/><br/>
+### [Guía - Introducción al ensamblado/mapeo genómico](https://docs.google.com/presentation/d/1gRdamhUnbwNt5dH0sQ93gvowMjzmFqAlxWwkxLSCHgI/edit?usp=sharing)<br/><br/>
 
 
 **Ejercicio 1.** Ensamblado _de novo_ con ABySS
